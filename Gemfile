@@ -34,7 +34,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # Recaptcha
 gem 'recaptcha', require: 'recaptcha/rails'
 
-# Gemfile
+# Dotenv - secure keys in development
 gem 'dotenv-rails', groups: [:development, :test]
 
 group :development, :test do
