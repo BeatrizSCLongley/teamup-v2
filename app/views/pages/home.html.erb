@@ -13,6 +13,11 @@
       <div class="col-7 col-xl-7">
         <%= video_tag "lined_head_silhouette.mp4", :type => "video/mp4", autoplay: :autoplay, preload: 'auto', muted: :muted, :height => '100%', :width => "100%", :id => "banner-video-head"%>
       </div>
+      <% flash.each do |type, msg| %>
+        <div class="alert alert-info">
+          <%= msg %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
@@ -92,7 +97,7 @@
         <h2 class="title-green">teamup∞™ 180°</h2>
         <p class="justify-text">Based on the teamup∞™ model for high performing teams, the teamup∞™ 180° assessment offers comprehensive, evidence-based feedback for where your greatest strengths/development areas are for driving high performance with your team.  It gathers self, team and line manager feedback and offers developmental advice in each dimension.</p>
         <p class="justify-text">The report includes the latest neuroscience behind each of the six roles, and also provides the barriers to effectiveness which you are demonstrating as an additional platform for your growth.</p>
-        <div class="margin-top-50">
+       <div class="margin-top-50">
           <%= link_to "teamup∞™ 180° sample report", contact_path, class: "btn-green"%>
         </div>
       </div>
