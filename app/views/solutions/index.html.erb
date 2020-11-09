@@ -61,36 +61,33 @@
   </div>
 </div>
 
-<div id="home-solutions">
+<div id="home-solutions-gray">
   <div class="container" id="home-solutions-content">
       <div id="home-solutions-title">
         <h2 class="title-green">Our Solutions</h2>
         <p class="subtitles-grey"><strong>We offer different leadership and team development solutions depending on your specific needs</strong></p>
       </div>
-
-      <div id="home-solutions-gray">
-        <div class="container">
-          <div id="row">
-            <% @solutions.each_with_index do |solution, index| %>
-              <div class="col-12 col-md-7 col-lg-7 col-xl-7 margin-top-50">
-                <p class="subtitles-grey"><%= solution.tagline %></p>
-                <h2 class="title-green"><%= solution.name %></h2>
-                <p class="justify-text"><%=  %></p>
-                <p class="justify-text"><%=  %></p>
-                <div class="margin-top-50">
-                  <%= link_to solution.button, contact_path, class: "btn-green" %>
-                </div>
-              </div>
-              <div class="col-12 col-md-5 col-lg-5 col-xl-5 home-sol-img-left image-hide">
-                <%= image_tag("report_180.jpg", :alt => "report", :class => "img-report") %>
-              </div>
-            <% end %>
+  </div>
+  <div class="container">
+    <div id="row">
+      <% @solutions.each_with_index do |solution, index| %>
+        <div class="col-12 col-md-7 col-lg-7 col-xl-7 margin-top-50">
+          <p class="subtitles-grey"><strong><%= solution.tagline %></strong></p>
+          <h2 class="title-green"><%= solution.name %></h2>
+          <p class="justify-text"><%= solution.description_one %></p>
+          <p class="justify-text"><%= solution.description_two %></p>
+          <div class="margin-top-50">
+            <%= link_to solution.button, new_solution_contact_path(solution), class: "btn-green" %>
           </div>
         </div>
-      </div>
+        <div class="col-12 col-md-5 col-lg-5 col-xl-5 home-sol-img-left image-hide">
+          <%= image_tag("report_180.jpg", :alt => "report", :class => "img-report") %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
+
 
 <!-- WORKSHOP -->
 <div class="container" id="home-workshop">
