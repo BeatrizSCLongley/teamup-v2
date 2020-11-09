@@ -53,24 +53,24 @@
 // -----------------------------------------------------------------------------
 // HOME - SOLUTIONS
 #home-solutions { // With the background image
-  height: 787px;
-  position: relative; // parent needs to be relative
+  height: 100px;
+//   position: relative; // parent needs to be relative
 
-  // pseudo-element
-  &::before {
-    content: ''; // so the img shows up
-    background-image: url(connect_background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.2;
-    position: absolute; // make it the same size as the parent
-    top: 0px; // these 4 properties make it so the img doesn't colapse
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    min-width: 100%;
-    z-index: -1;
-  }
+//   // pseudo-element
+//   &::before {
+//     content: ''; // so the img shows up
+//     background-image: url(connect_background.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     opacity: 0.2;
+//     position: absolute; // make it the same size as the parent
+//     top: 0px; // these 4 properties make it so the img doesn't colapse
+//     right: 0px;
+//     left: 0px;
+//     bottom: 0px;
+//     min-width: 100%;
+//     z-index: -1;
+//   }
 }
 
 // ---------------------------

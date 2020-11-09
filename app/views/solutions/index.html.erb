@@ -67,69 +67,26 @@
         <h2 class="title-green">Our Solutions</h2>
         <p class="subtitles-grey"><strong>We offer different leadership and team development solutions depending on your specific needs</strong></p>
       </div>
-      <!-- NEUROSELFIE -->
-      <div class="row" id="home-sol-neuroselfie">
-        <div class="col-12 col-md-5 col-lg-5 col-xl-5" id="home-neuroselfie-img">
-          <%= image_tag("report_ns.jpg", :alt => "neuro selfie report", :id => "img-report-ns") %>
-        </div>
-        <div class="col-12 col-md-7 col-lg-7 col-xl-7" id="home-ns-text-right">
-          <p class="subtitles-grey"><strong>Start with the individual</strong></p>
-          <h2 id="title-blue">neuro-selfie™</h2>
-          <p class="justify-text">The neuro-selfie™ is a one page snapshot based on the latest neuroscience, for where your strengths and weaknesses lie in leading a team to high performance.</p>
-          <p class="justify-text">It takes just a couple of minutes to complete and is a quick yet impactful self-report assessment which will lead to a greater understanding of which actions you can take to become an even stronger team leader.</p>
-        </div>
-      </div>
-      <div class="home-text-middle">
-        <p class="subtitles-grey"><strong>Click here to book your neuro-selfie™, and start your journey towards becoming a better individual and team leader</strong></p>
-      </div>
-      <div class="home-btn-middle margin-top-50">
-        <%= link_to "book your neuro-selfie™", new_solution_contact_path(@solution), class: "btn-blue"%>
-      </div>
-  </div>
-</div>
 
-<div id="home-solutions-gray">
-  <div class="container">
-    <!-- TEAMUP 180° SOLUTION -->
-    <div class="row">
-      <div class="col-12 col-md-7 col-lg-7 col-xl-7 margin-top-50 ">
-        <p class="subtitles-grey"><strong>Develop leaders</strong></p>
-        <h2 class="title-green">teamup∞™ 180°</h2>
-        <p class="justify-text">Based on the teamup∞™ model for high performing teams, the teamup∞™ 180° assessment offers comprehensive, evidence-based feedback for where your greatest strengths/development areas are for driving high performance with your team.  It gathers self, team and line manager feedback and offers developmental advice in each dimension.</p>
-        <p class="justify-text">The report includes the latest neuroscience behind each of the six roles, and also provides the barriers to effectiveness which you are demonstrating as an additional platform for your growth.</p>
-       <!-- <div class="margin-top-50">
-          <%#= link_to "teamup∞™ 180° sample report", contact_path, class: "btn-green"%>
-        </div> -->
-
-        <!-- Button trigger modal -->
-        <button type="button" class="btn-green margin-top-50" data-toggle="modal" data-target="#exampleModal">
-          teamup∞™ 180° sample report
-        </button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+      <div id="home-solutions-gray">
+        <div class="container">
+          <div id="row">
+            <% @solutions.each_with_index do |solution, index| %>
+              <div class="col-12 col-md-7 col-lg-7 col-xl-7 margin-top-50">
+                <p class="subtitles-grey"><%= solution.tagline %></p>
+                <h2 class="title-green"><%= solution.name %></h2>
+                <p class="justify-text"><%=  %></p>
+                <p class="justify-text"><%=  %></p>
+                <div class="margin-top-50">
+                  <%= link_to solution.button, contact_path, class: "btn-green" %>
+                </div>
               </div>
-              <div class="modal-body">
-               <%#= render 'contacts/form', contact: @contact, solution: @solution %>
+              <div class="col-12 col-md-5 col-lg-5 col-xl-5 home-sol-img-left image-hide">
+                <%= image_tag("report_180.jpg", :alt => "report", :class => "img-report") %>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
+            <% end %>
           </div>
         </div>
-      </div>
-
-      <div class="col-12 col-md-5 col-lg-5 col-xl-5 home-sol-img-left image-hide">
-        <%= image_tag("report_180.jpg", :alt => "report", :class => "img-report") %>
       </div>
     </div>
   </div>
