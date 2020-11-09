@@ -1,0 +1,27 @@
+#contact-container {
+  height: 900px;
+
+  &::before {
+    content: ''; // so the img shows up
+    background-image: url(connect_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+    position: absolute; // make it the same size as the parent
+    top: 0px; // these 4 properties make it so the img doesn't colapse
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    min-width: 100%;
+    z-index: -1;
+  }
+}
+
+#contact-form {
+  background-color: rgba(252, 252, 252, 0.8);
+  width: 100%;
+  padding: 50px;
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+

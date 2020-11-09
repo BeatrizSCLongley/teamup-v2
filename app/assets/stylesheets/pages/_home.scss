@@ -1,0 +1,181 @@
+// HOME - INTRO
+.home-text-right { // GENERAL
+  text-align: right;
+  padding-top: 101px;
+}
+
+#home-intro-pic {
+  height: 473px;
+}
+
+.divider {
+  height: 74px; // to create an 'invisible' divider in between content
+}
+
+// -----------------------------------------------------------------------------
+// HOME - QUOTE
+.home-text-middle { // GENERAL
+  text-align: center;
+}
+
+#quote {
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--teamupPink);
+}
+
+#quote-author {
+  font-size: 20px;
+  color: var(--teamupGrey)
+}
+
+.divider_two {
+  height: 130px; // to create an 'invisible' divider in between content
+}
+
+// -----------------------------------------------------------------------------
+// HOME - HOW IT WORKS
+#home-how {
+  text-align: justify;
+}
+
+#home-how-img {
+  background-color: white; // So that you don't see the white - temp solution until animation is ready
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#home-how-color {
+  background-image: linear-gradient(rgb(252, 252, 252), rgb(255, 255, 255)); // temporary solution to the color
+}
+
+// -----------------------------------------------------------------------------
+// HOME - SOLUTIONS
+#home-solutions { // With the background image
+  height: 787px;
+  position: relative; // parent needs to be relative
+
+  // pseudo-element
+  &::before {
+    content: ''; // so the img shows up
+    background-image: url(connect_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    position: absolute; // make it the same size as the parent
+    top: 0px; // these 4 properties make it so the img doesn't colapse
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    min-width: 100%;
+    z-index: -1;
+  }
+}
+
+// ---------------------------
+// Section title
+#home-solutions-content {
+  position: relative; // the child elements also need to be relative to be 'on top'
+  z-index: 1;
+}
+
+#home-solutions-title {
+  text-align: center;
+  padding-top: 82px;
+}
+// ---------------------------
+// neuro-selfie
+#home-sol-neuroselfie {
+  margin: 90px 0px 60px 0px;
+}
+
+#home-neuroselfie-img {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#home-ns-text-right {
+  text-align: right;
+  padding-top: 52px;
+}
+// ---------------------------
+// solutions grey section
+#home-solutions-gray {
+  position: relative;
+  background-color: rgb(242, 242, 242);
+  height: 1528px;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+// left solutions
+.home-sol-img-left {
+  display: flex;
+  justify-content: flex-end; // or center depending on taste + make it disappear in smaller screen
+  margin-top: 59px;
+}
+// right solution
+#home-sol-img-right {
+  display: flex;
+  justify-content: flex-start; // or center depending on taste + make it disappear in smaller screen
+  margin-top: 59px;
+}
+
+// text
+.justify-text { // GENERAL
+  text-align: justify;
+}
+
+// ----------------------------
+// solutions workshop
+#home-workshop {
+  height: 605px;
+  position: relative; // parent needs to be relative
+
+  // pseudo-element
+  &::before {
+    content: ''; // so the img shows up
+    background-image: url(connect_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    position: absolute; // make it the same size as the parent
+    top: 0px; // these 4 properties make it so the img doesn't colapse
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+  }
+}
+
+#home-workshop-content {
+  position: relative;
+  padding-top: 65px;
+}
+
+// MEDIA QUERY -----------------------------------------------------------------
+// Small screen
+@media only screen and (max-width: 767px) {
+  // incease size of grey area
+  #home-solutions-gray {
+    height: 1402px;
+  }
+}
+// Medium screen
+@media only screen and (min-width: 768px) {
+  // incease size of grey area
+  #home-solutions-gray {
+    height: 1602px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  // incease size of grey area
+  #home-solutions-gray {
+    height: 1476px;
+  }
+}
