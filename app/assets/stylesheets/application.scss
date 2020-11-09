@@ -1,3 +1,36 @@
 // External libraries
 @import "bootstrap/scss/bootstrap";
 
+// Graphical variables
+// @import "config/fonts";
+@import "config/colors";
+
+// CSS pages
+@import "pages/home";
+@import "pages/contact";
+
+// CSS components
+@import "components/banner";
+@import "components/images";
+@import "components/btn";
+@import "components/navbar";
+@import "components/footer";
+@import "components/flash";
+@import "components/titles";
+
+// ---------------------------------------------------
+body {
+  font-family: "Avenir Next";
+}
+
+// General css
+// MEDIA QUERY
+@media only screen and (max-width: 1198px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
