@@ -52,29 +52,12 @@
 
 // -----------------------------------------------------------------------------
 // HOME - SOLUTIONS
-#home-solutions { // With the background image
-  height: 787px;
-  position: relative; // parent needs to be relative
-
-  // pseudo-element
-  &::before {
-    content: ''; // so the img shows up
-    background-image: url(connect_background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.2;
-    position: absolute; // make it the same size as the parent
-    top: 0px; // these 4 properties make it so the img doesn't colapse
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    min-width: 100%;
-    z-index: -1;
-  }
+#home-solutions-gray {
+  background-color: rgb(242, 242, 242);
+  height: 3500px;
+  width: 100%;
 }
 
-// ---------------------------
-// Section title
 #home-solutions-content {
   position: relative; // the child elements also need to be relative to be 'on top'
   z-index: 1;
@@ -99,19 +82,9 @@
   text-align: right;
   padding-top: 52px;
 }
-// ---------------------------
-// solutions grey section
-#home-solutions-gray {
-  position: relative;
-  background-color: rgb(242, 242, 242);
-  height: 1528px;
-  width: 100%;
-  margin-top: 70px;
-}
 
-.margin-top-50 {
-  margin-top: 50px;
-}
+// ------------------------
+
 
 // left solutions
 .home-sol-img-left {
@@ -162,7 +135,7 @@
 @media only screen and (max-width: 767px) {
   // incease size of grey area
   #home-solutions-gray {
-    height: 1402px;
+    height: 1890px;
   }
 }
 // Medium screen
@@ -176,6 +149,6 @@
 @media only screen and (min-width: 992px) {
   // incease size of grey area
   #home-solutions-gray {
-    height: 1476px;
+    height: 3500px;
   }
 }

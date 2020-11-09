@@ -23,14 +23,14 @@
     <div class="row">
       <div class="col">
         <div id="contact-form">
-          <%= simple_form_for(@contact) do |f| %>
-            <%= f.input :name, label: 'Your first and last name please',  placeholder: 'Jane Leader', error: 'Name is mandatory' %>
-            <%= f.input :email, placeholder: 'user@domain.com' %>
-            <%= f.input :topic, required: 'required', hint: 'When selecting teamup∞™ 180°, teamup∞™ 360° or teamup∞™ for teams, you will be able to download a sample report', collection: ["General", "neuro-selfie™", "teamup∞™ 180°", "teamup∞™ 360°", "teamup∞™ for teams", "Workshop series"] %>
-            <%= f.input :message, as: :text %>
-            <%= recaptcha_tags %>
-            <%= f.submit "Send", class: "btn-orange margin-top-50" %>
-          <% end %>
+          <%#= simple_form_for [ @solution, @contact ] do |f| %>
+            <%#= f.input :name, label: 'Your first and last name please',  placeholder: 'Jane Leader', error: 'Name is mandatory' %>
+            <%#= f.input :email, placeholder: 'user@domain.com' %>
+            <%#= f.input :topic, required: 'required', hint: 'When selecting teamup∞™ 180°, teamup∞™ 360° or teamup∞™ for teams, you will be able to download a sample report', collection: ["General", "neuro-selfie™", "teamup∞™ 180°", "teamup∞™ 360°", "teamup∞™ for teams", "Workshop series"] %>
+            <%#= f.input :message, as: :text %>
+            <%#= recaptcha_tags %>
+            <%#= f.submit "Send", class: "btn-orange margin-top-50" %>
+          <%# end %>
         </div>
       </div>
     </div>
