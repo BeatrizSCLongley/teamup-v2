@@ -1,0 +1,55 @@
+<div id="contact-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="title-orange margin-top-50">Contact form</h2>
+        <div id="contact-form-intro">
+          <p>We would love to hear from you.</p>
+          <p>Please provide your contact details below, and select a topic so that we can get back to you with all of the relevant information</p>
+          <p>Feel free to leave my additional comments or questions you might have.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact-container">
+  <div class="container">
+    <% flash.each do |type, msg| %>
+      <div class="alert alert-info">
+        <%= msg %>
+      </div>
+    <% end %>
+    <div class="row">
+      <div class="col">
+        <div id="contact-form">
+          <%= simple_form_for(@contact) do |f| %>
+            <%= f.input :name, label: 'Your first and last name please',  placeholder: 'Jane Leader', error: 'Name is mandatory' %>
+            <%= f.input :email, placeholder: 'user@domain.com' %>
+            <%= f.input :topic, required: 'required', collection: ["General", "neuro-selfie™", "teamup∞™ 180°", "teamup∞™ 360°", "teamup∞™ for teams", "Workshop series"] %>
+            <%= f.input :message, as: :text %>
+            <%= recaptcha_tags %>
+            <%= f.submit "Send", class: "btn-orange margin-top-50" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="container" id="footer-padding">
+    <div class="row">
+      <div class="col">
+        <p><strong>teamup.inc - address placeholder</strong> | <%= link_to "Home", root_path, class: "footer-home"%> | <%= link_to "About", root_path, class: "footer-about"%> | <%= link_to "Privacy Policy", root_path, class: "footer-priv-policy"%></p>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="footer-designer">
+    <div class="row">
+      <p>Designed by: Beatriz S.C. Longley</p>
+    </div>
+  </div>
+</footer>
+
