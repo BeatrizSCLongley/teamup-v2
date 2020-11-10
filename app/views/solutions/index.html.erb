@@ -85,7 +85,16 @@
           </div>
         </div>
         <div class="col-12 col-md-5 col-lg-5 col-xl-5 home-sol-img-left image-hide">
-          <%= image_tag(solution.image, alt: 'report', class: 'img-report') %>
+          <!-- The iteration syntax wasn't working -->
+          <% if solution.name == 'neuro-selfie™' %>
+            <%= image_tag('report_ns.jpg', alt: 'report', class: 'img-report') %>
+          <% elsif solution.name == 'teamup∞™ 180°' %>
+            <%= image_tag('report_180.jpg', alt: 'report', class: 'img-report') %>
+          <% elsif solution.name == 'teamup∞™ 360°' %>
+            <%= image_tag('report_360.jpg', alt: 'report', class: 'img-report') %>
+          <% elsif solution.name == 'teamup∞™ for teams' %>
+            <%= image_tag('report_teams.jpg', alt: 'report', class: 'img-report') %>
+          <% end %>
         </div>
       <% end %>
     </div>
