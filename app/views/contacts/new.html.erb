@@ -6,7 +6,9 @@
         <div id="contact-banner-intro">
           <p>We would love to hear from you.</p>
           <p>Please provide your contact details below and feel free to leave my additional comments or questions you might have.</p>
-          <p class="subtitles-grey">After you have submited your contact details a button will appear to allow you to access our <%= @solution.name %> sample report.</p>
+          <% unless @solution.name == 'General' || @solution.name == 'Team effectiveness workshop series' %>
+            <p class="subtitles-grey">After you have submited your contact details a button will appear to allow you to access our <%= @solution.name %> sample report.</p>
+          <% end %>
         </div>
         <div class="margin-top-50">
           <%= link_to "download sample report", root_path, id: "btn-download", class: "btn-orange hidden" %>
