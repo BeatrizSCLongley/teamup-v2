@@ -54,7 +54,7 @@
 // HOME - SOLUTIONS
 #home-solutions-gray {
   background-color: rgb(242, 242, 242);
-  height: 2005px;
+  height: 2158px;
   width: 100%;
 }
 
@@ -68,37 +68,18 @@
   padding-top: 82px;
 }
 
-// ---------------------------
-// neuro-selfie
-#home-sol-neuroselfie {
-  margin: 90px 0px 60px 0px;
-}
-
-#home-neuroselfie-img {
-  display: flex;
-  justify-content: flex-start;
-}
-
-#home-ns-text-right {
-  text-align: right;
-  padding-top: 52px;
-}
-
-// ------------------------
-
-
 // left solutions
-.home-sol-img-left {
+.home-sol-img-right {
   display: flex;
   justify-content: flex-end; // or center depending on taste + make it disappear in smaller screen
-  margin-top: 59px;
 }
+
 // right solution
-#home-sol-img-right {
-  display: flex;
-  justify-content: flex-start; // or center depending on taste + make it disappear in smaller screen
-  margin-top: 59px;
-}
+// #home-sol-img-left {
+//   display: flex;
+//   justify-content: flex-start; // or center depending on taste + make it disappear in smaller screen
+//   margin-top: 59px;
+// }
 
 // text
 .justify-text { // GENERAL
@@ -108,7 +89,7 @@
 // ----------------------------
 // solutions workshop
 #home-workshop {
-  height: 605px;
+  height: 530px;
   position: relative; // parent needs to be relative
 
   // pseudo-element
@@ -136,20 +117,20 @@
 @media only screen and (max-width: 767px) {
   // incease size of grey area
   #home-solutions-gray {
-    height: 1890px;
+    height: 2043px;
   }
 }
 // Medium screen
 @media only screen and (min-width: 768px) {
   // incease size of grey area
   #home-solutions-gray {
-    height: 1602px;
+    height: 2207px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   // incease size of grey area
   #home-solutions-gray {
-    height: 2005px;
+    height: 2158px;
   }
 }

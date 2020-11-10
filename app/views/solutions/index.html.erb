@@ -8,7 +8,7 @@
           <p class="justify-text">We believe that leaders and teams can always get better. Better Teams. Better Times. Striving for better is both healthy and something you can habituate.</p>
           <p class="justify-text">So teamup∞™ offers a range of solutions built on neuroscience designed to accelerate individual and team performance.</p>
         </div>
-        <%= link_to "our solutions", root_path(@root, :anchor => "home-solutions"), id: "home-banner-btn" %>
+        <%= link_to "our solutions", root_path(@root, :anchor => "home-solutions-gray"), id: "home-banner-btn" %>
       </div>
       <div class="col-7 col-xl-7">
         <%= video_tag "lined_head_silhouette.mp4", :type => "video/mp4", autoplay: :autoplay, preload: 'auto', muted: :muted, :height => '100%', :width => "100%", :id => "banner-video-head"%>
@@ -71,21 +71,23 @@
   <div class="container">
     <div class="row">
       <% @solutions.each_with_index do |solution, index| %>
-        <div class="col-12 col-md-7 col-lg-7 col-xl-7 margin-top-50">
+        <%#= unless solution.name == 'General' && 'Team effectiveness workshop series' %>
+        <div class="col-12 col-md-7 col-lg-7 col-xl-7 margin-top-100">
           <p class="subtitles-grey"><strong><%= solution.tagline %></strong></p>
-          <h2 class="<%= solution.name == 'neuro-selfie™' ? 'title-blue' : 'title-green' %>"><%= solution.name %></h2>
+          <h2 class="<%= solution.name == 'neuro-selfie™' ? "title-blue" : "title-green" %>"><%= solution.name unless solution.name == 'General' || solution.name == 'Team effectiveness workshop series' %></h2>
           <p class="justify-text"><%= solution.description_one %></p>
           <p class="justify-text"><%= solution.description_two %></p>
           <div class="margin-top-50">
             <% if solution.button == 'book your neuro-selfie™' %>
               <%= link_to solution.button, new_solution_contact_path(solution), class: 'btn-blue' %>
+            <% elsif solution.name == 'General' || solution.name == 'Team effectiveness workshop series' %>
+              <%= link_to solution.button, new_solution_contact_path(solution), class: 'hidden' %>
             <% else %>
               <%= link_to solution.button, new_solution_contact_path(solution), class: 'btn-green' %>
             <% end %>
           </div>
         </div>
-        <div class="col-12 col-md-5 col-lg-5 col-xl-5 home-sol-img-left image-hide">
-          <!-- The iteration syntax wasn't working -->
+        <div class="col-12 col-md-5 col-lg-5 col-xl-5 home-sol-img-right image-hide margin-top-100">
           <% if solution.name == 'neuro-selfie™' %>
             <%= image_tag('report_ns.jpg', alt: 'report', class: 'img-report') %>
           <% elsif solution.name == 'teamup∞™ 180°' %>
@@ -105,15 +107,19 @@
 <!-- WORKSHOP -->
 <div class="container" id="home-workshop">
   <div class="row" id="home-workshop-content">
-    <div class="col-12 col-xl-8">
-      <p class="subtitles-grey"><strong>Go beyond</strong></p>
-      <h2 class="title-orange">Team effectiveness workshop series</h2>
-      <p class="justify-text">Any one of the teamup∞™ assessments is an incredibly powerful diagnostic to better understand how to elevate your team leadership or effectiveness. However, sometimes we need expert support to bring the action plan to life, which is where the workshop series comes in.</p>
-      <p class="justify-text">We can design and deliver virtual or in-person workshops which can accelerate your individual or team’s growth. These are fully customised to your needs and can be delivered across different time frames ranging from one-time launch workshops, to facilitated 12 month team effectiveness journeys.</p>
-      <div class="margin-top-50">
-        <%#= link_to "find out more", contact_path, class: "btn-orange"%>
-      </div>
-    </div>
+    <% @solutions.each_with_index do |solution, index| %>
+      <% if solution.name == 'Team effectiveness workshop series' %>
+        <div class="col-12 col-xl-8">
+          <p class="subtitles-grey"><strong>Go beyond</strong></p>
+          <h2 class="title-orange"><%= solution.name %></h2>
+          <p class="justify-text">Any one of the teamup∞™ assessments is an incredibly powerful diagnostic to better understand how to elevate your team leadership or effectiveness. However, sometimes we need expert support to bring the action plan to life, which is where the workshop series comes in.</p>
+          <p class="justify-text">We can design and deliver virtual or in-person workshops which can accelerate your individual or team’s growth. These are fully customised to your needs and can be delivered across different time frames ranging from one-time launch workshops, to facilitated 12 month team effectiveness journeys.</p>
+          <div class="margin-top-50">
+            <%= link_to "find out more", new_solution_contact_path(solution), class: "btn-orange"%>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
   </div>
 </div>
 
