@@ -71,7 +71,7 @@
   <div class="container">
     <div class="row">
       <% @solutions.each_with_index do |solution, index| %>
-        <div class="col-12 col-md-7 col-lg-7 col-xl-7 margin-top-50">
+        <div class="col-12 col-md-7 col-lg-7 col-xl-7 margin-top-100">
           <p class="subtitles-grey"><strong><%= solution.tagline %></strong></p>
           <h2 class="<%= solution.name == 'neuro-selfie™' ? 'title-blue' : 'title-green' %>"><%= solution.name %></h2>
           <p class="justify-text"><%= solution.description_one %></p>
@@ -84,7 +84,7 @@
             <% end %>
           </div>
         </div>
-        <div class="col-12 col-md-5 col-lg-5 col-xl-5 home-sol-img-left image-hide">
+        <div class="col-12 col-md-5 col-lg-5 col-xl-5 home-sol-img-right image-hide margin-top-100">
           <!-- The iteration syntax wasn't working -->
           <% if solution.name == 'neuro-selfie™' %>
             <%= image_tag('report_ns.jpg', alt: 'report', class: 'img-report') %>
