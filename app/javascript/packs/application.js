@@ -20,10 +20,12 @@ import 'bootstrap';
 
 // -----------------------------------------------------
 // Import functions here:
-import { initUpdateNavbarOnScroll } from '../components/navbar';
+import { navbarScroll } from '../components/navbar';
+import { downloadBtn } from '../components/download';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initUpdateNavbarOnScroll();
   navbarScroll();
+  downloadBtn();
 });

@@ -11,7 +11,8 @@ class ContactsController < ApplicationController
 
     if @contact.save
       # && verify_recaptcha(model: @contact)
-      redirect_to root_path, notice: "Thanks, we have received your contact information. You will receive an email from hello@teamup.inc to your #{@contact.email} account"
+      # solution_path(@solution)
+      redirect_to new_solution_contact_path(@solution), notice: "Thanks, we have received your contact information. You will receive an email from hello@teamup.inc to your #{@contact.email} account"
       message = ContactMailer.with(contact: @contact).new_contact
       message.deliver_now
     else
