@@ -56,7 +56,7 @@
     <p>Our assessments help you to hone in on which of the six roles you do well, which you could improve upon, along with practical suggestions you can apply to your work today.</p>
     <div id="home-how-img">
       <%#= image_tag("infinity_loop.jpg", :alt => "infinity loop model", :id => "img-infinity-loop") %>
-      <%= video_tag "Loop_v3.mp4", :type => "video/mp4", autoplay: :autoplay, preload: 'auto', muted: :muted, :height => '460px', :width => "900px", :id => "home-video-loop"%>
+      <%= video_tag "Loop-v5.mp4", :type => "video/mp4", autoplay: :autoplay, preload: 'auto', muted: :muted, :height => '460px', :width => "900px", :id => "home-video-loop"%>
     </div>
   </div>
 </div>
@@ -69,19 +69,32 @@
       </div>
   </div>
   <div class="container">
-    <div id="row">
+    <div class="row">
       <% @solutions.each_with_index do |solution, index| %>
         <div class="col-12 col-md-7 col-lg-7 col-xl-7 margin-top-50">
           <p class="subtitles-grey"><strong><%= solution.tagline %></strong></p>
-          <h2 class="title-green"><%= solution.name %></h2>
+          <h2 class="<%= solution.name == 'neuro-selfie™' ? 'title-blue' : 'title-green' %>"><%= solution.name %></h2>
           <p class="justify-text"><%= solution.description_one %></p>
           <p class="justify-text"><%= solution.description_two %></p>
           <div class="margin-top-50">
-            <%= link_to solution.button, new_solution_contact_path(solution), class: "btn-green" %>
+            <% if solution.button == 'book your neuro-selfie™' %>
+              <%= link_to solution.button, new_solution_contact_path(solution), class: 'btn-blue' %>
+            <% else %>
+              <%= link_to solution.button, new_solution_contact_path(solution), class: 'btn-green' %>
+            <% end %>
           </div>
         </div>
         <div class="col-12 col-md-5 col-lg-5 col-xl-5 home-sol-img-left image-hide">
-          <%= image_tag("report_180.jpg", :alt => "report", :class => "img-report") %>
+          <!-- The iteration syntax wasn't working -->
+          <% if solution.name == 'neuro-selfie™' %>
+            <%= image_tag('report_ns.jpg', alt: 'report', class: 'img-report') %>
+          <% elsif solution.name == 'teamup∞™ 180°' %>
+            <%= image_tag('report_180.jpg', alt: 'report', class: 'img-report') %>
+          <% elsif solution.name == 'teamup∞™ 360°' %>
+            <%= image_tag('report_360.jpg', alt: 'report', class: 'img-report') %>
+          <% elsif solution.name == 'teamup∞™ for teams' %>
+            <%= image_tag('report_teams.jpg', alt: 'report', class: 'img-report') %>
+          <% end %>
         </div>
       <% end %>
     </div>
