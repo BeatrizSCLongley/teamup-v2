@@ -40,7 +40,7 @@
 }
 
 #home-how-img {
-  background-color: rgb(253, 252, 254); // To match the background of the video
+  background-color: rgb(255, 254, 255); // To match the background of the video
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -54,7 +54,7 @@
 // HOME - SOLUTIONS
 #home-solutions-gray {
   background-color: rgb(242, 242, 242);
-  height: 3500px;
+  height: 2005px;
   width: 100%;
 }
 
@@ -149,6 +149,6 @@
 @media only screen and (min-width: 992px) {
   // incease size of grey area
   #home-solutions-gray {
-    height: 3500px;
+    height: 2005px;
   }
 }
