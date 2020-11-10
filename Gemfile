@@ -34,6 +34,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # Recaptcha
 gem 'recaptcha', require: 'recaptcha/rails'
 
+# Postmark - email service
+gem 'postmark-rails'
+
 # Dotenv - secure keys in development
 gem 'dotenv-rails', groups: [:development, :test]
 
