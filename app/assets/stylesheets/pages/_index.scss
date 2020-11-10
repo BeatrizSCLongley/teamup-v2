@@ -8,16 +8,8 @@
   height: 473px;
 }
 
-.divider {
-  height: 74px; // to create an 'invisible' divider in between content
-}
-
 // -----------------------------------------------------------------------------
 // HOME - QUOTE
-.home-text-middle { // GENERAL
-  text-align: center;
-}
-
 #quote {
   font-weight: bold;
   font-size: 25px;
@@ -27,10 +19,6 @@
 #quote-author {
   font-size: 20px;
   color: var(--teamupGrey)
-}
-
-.divider_two {
-  height: 130px; // to create an 'invisible' divider in between content
 }
 
 // -----------------------------------------------------------------------------
