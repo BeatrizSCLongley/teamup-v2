@@ -11,7 +11,7 @@
         <%= link_to "our solutions", root_path(@root, :anchor => "home-solutions-gray"), id: "home-banner-btn" %>
       </div>
       <div class="col-7 col-xl-7">
-        <%= video_tag "lined_head_silhouette.mp4", :type => "video/mp4", autoplay: :autoplay, preload: 'auto', muted: :muted, :height => '100%', :width => "100%", :id => "banner-video-head"%>
+        <%= video_tag "lined_head_silhouette.mp4", :type => "video/mp4", autoplay: :autoplay, preload: 'auto', muted: :muted, :height => '100%', :width => "100%", :id => "banner-video-head", :style => "object-fit: none"%>
       </div>
       <% flash.each do |type, msg| %>
         <div class="alert alert-info">
