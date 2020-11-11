@@ -1,0 +1,48 @@
+<div id="show-banner">
+  <%= video_tag "background-white.mp4", :type => "video/mp4", autoplay: :autoplay, preload: 'auto', muted: :muted, loop: :loop,:height => '100%', :width => "100%", :id => "banner-show-video", :style => "object-fit: cover"%>
+</div>
+
+<% flash.each do |type, msg| %>
+  <div class="alert alert-info">
+    <%= msg %>
+  </div>
+<% end %>
+
+<div id="show-solution">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-7 col-lg-7 col-xl-7">
+        <p class="subtitles-grey"><strong><%= @solution.tagline %></strong></p>
+        <h2 class="<%= @solution.name == 'neuro-selfie™' ? 'title-blue' : 'title-green' %>"><%= @solution.name %></h2>
+        <div id="show-solution-description">
+          <p class="justify-text"><%= @solution.description_one %></p>
+          <p class="justify-text"><%= @solution.description_two %></p>
+        </div>
+        <div class="margin-top-50">
+          <!-- CHANGE THE LINK ON & ADD IF STATEMENT -->
+          <% if @solution.name == 'neuro-selfie™' %>
+            <%= link_to "download neuro-selfie™ sample report", "https://drive.google.com/file/d/1SN-c73-kVXU0CGZYfPFST0_RcCsVWxWU/view", target: :_blank, class: "btn-blue-show"%>
+          <% elsif @solution.name == 'teamup∞™ 180°' %>
+            <%= link_to "download teamup∞™ 180° sample report", "https://drive.google.com/file/d/1SN-c73-kVXU0CGZYfPFST0_RcCsVWxWU/view", target: :_blank, class: "btn-green-show"%>
+           <% elsif @solution.name == 'teamup∞™ 360°' %>
+            <%= link_to "download teamup∞™ 360° sample report", "https://drive.google.com/file/d/1SN-c73-kVXU0CGZYfPFST0_RcCsVWxWU/view", target: :_blank, class: "btn-green-show"%>
+          <% elsif @solution.name == 'teamup∞™ for teams' %>
+            <%= link_to "download teamup∞™ for teams sample report", "https://drive.google.com/file/d/1SN-c73-kVXU0CGZYfPFST0_RcCsVWxWU/view", target: :_blank, class: "btn-green-show"%>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-5 col-lg-5 col-xl-5 home-sol-img-right image-hide">
+        <% if @solution.name == 'neuro-selfie™' %>
+          <%= image_tag('report_ns.jpg', alt: 'report', class: 'img-report') %>
+        <% elsif @solution.name == 'teamup∞™ 180°' %>
+          <%= image_tag('report_180.jpg', alt: 'report', class: 'img-report') %>
+        <% elsif @solution.name == 'teamup∞™ 360°' %>
+          <%= image_tag('report_360.jpg', alt: 'report', class: 'img-report') %>
+        <% elsif @solution.name == 'teamup∞™ for teams' %>
+          <%= image_tag('report_teams.jpg', alt: 'report', class: 'img-report') %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

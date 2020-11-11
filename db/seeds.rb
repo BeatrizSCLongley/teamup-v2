@@ -10,7 +10,7 @@ solution_one = Solution.new(
   description_one: 'The neuro-selfie™ is a one page snapshot based on the latest neuroscience, for where your strengths and weaknesses lie in leading a team to high performance.',
   description_two: 'It takes just a couple of minutes to complete and is a quick yet impactful self-report assessment which will lead to a greater understanding of which actions you can take to become an even stronger team leader.',
   image: File.open('app/assets/images/report_ns.jpg'),
-  button: 'book your neuro-selfie™'
+  button: 'neuro-selfie™ sample report'
 )
 solution_one.save!
 

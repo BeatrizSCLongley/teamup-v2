@@ -11,8 +11,11 @@ class ContactsController < ApplicationController
 
     if @contact.save
       # && verify_recaptcha(model: @contact)
-      # solution_path(@solution) - to have the btn available to download
-      redirect_to new_solution_contact_path(@solution), notice: "Thanks, we have received your contact information. You will receive an email from hello@teamup.inc to your #{@contact.email} account"
+      if @solution.name == 'neuro-selfie™' || @solution.name == 'teamup∞™ 180°' || @solution.name == 'teamup∞™ 360°' || @solution.name == 'teamup∞™ for teams'
+        redirect_to solution_path(@solution), notice: "Thanks, we have received your contact information. You will now be able to access a #{@solution.name} sample report"
+      else
+        redirect_to new_solution_contact_path(@solution), notice: "Thanks, we have received your contact information. You will receive an email from hello@teamup.inc to your #{@contact.email} account"
+      end
       message = ContactMailer.with(contact: @contact).new_contact
       message.deliver_now
     else
