@@ -10,7 +10,24 @@
   margin-top: 150px;
 }
 
+.text-middle {
+  text-align: center;
+}
+
+.text-right {
+  text-right: right;
+}
+
 // -----------------------------------------------------------------------------
 .hidden {
   display: none;
+}
+
+// -----------------------------------------------------------------------------
+.divider {
+  height: 74px; // to create an 'invisible' divider in between content
+}
+
+.divider_two {
+  height: 130px; // to create an 'invisible' divider in between content
 }

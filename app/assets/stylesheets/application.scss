@@ -7,7 +7,7 @@
 @import "config/general";
 
 // CSS pages
-@import "pages/home";
+@import "pages/index";
 @import "pages/about";
 @import "pages/contact";
 
@@ -27,6 +27,16 @@ body {
 
 // General css
 // MEDIA QUERY
+@media only screen and (max-width: 632px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+}
+
 @media only screen and (max-width: 1198px) {
   h2 {
     font-size: 24px;
