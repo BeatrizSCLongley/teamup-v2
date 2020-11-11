@@ -1,9 +1,17 @@
 // Home
+// banner
 #img-banner-logo {
   height: 111px;
   width: 292px;
 }
 
+// banner - mobile
+#img-banner-logo-mobile {
+  height: 66px;
+  width: 162px;
+}
+
+// ---------------------------------------
 #img-reports {
   height: 100%;
   width: 100%;
@@ -39,15 +47,10 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+// -----------------------------------------------------------------------------
 // MEDIA QUERY
 // Small screen
 @media only screen and (max-width: 767px) {
-  // resize logo on banner
-  #img-banner-logo {
-    height: 81px;
-    width: 208px;
-  }
-
   // resize intro pic
   #home-intro-pic {
     height: 410px;
@@ -74,4 +77,3 @@
     height: 445px;
   }
 }
-

@@ -32,6 +32,7 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  height: 450px;
 }
 
 #home-how-color {
@@ -105,7 +106,7 @@
 @media only screen and (max-width: 767px) {
   // incease size of grey area
   #home-solutions-gray {
-    height: 2043px;
+    height: 2204px;
   }
 }
 // Medium screen
@@ -120,5 +121,32 @@
   // incease size of grey area
   #home-solutions-gray {
     height: 2158px;
+  }
+}
+
+// -------------------------------------
+// Render different Intro section
+@media only screen and (max-width: 767px) {
+  #home-intro-mobile {
+    display: block;
+  }
+  #home-intro {
+    display: none;
+  }
+  .divider_two {
+    height: 55px;
+  }
+  #home-how-img {
+    margin-top: 0px;
+    height: 299px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #home-intro-mobile {
+    display: none;
+  }
+  #home-intro {
+    display: block;
   }
 }
