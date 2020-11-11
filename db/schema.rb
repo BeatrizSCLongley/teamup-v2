@@ -12,10 +12,13 @@
 
 ActiveRecord::Schema.define(version: 2020_11_09_171912) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "contacts", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.string "topic"
+    t.text "name"
+    t.text "email"
+    t.text "topic"
     t.text "message"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -23,14 +26,14 @@ ActiveRecord::Schema.define(version: 2020_11_09_171912) do
   end
 
   create_table "solutions", force: :cascade do |t|
-    t.string "name"
+    t.text "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "description_one"
-    t.string "description_two"
-    t.string "image"
-    t.string "tagline"
-    t.string "button"
+    t.text "description_one"
+    t.text "description_two"
+    t.text "image"
+    t.text "tagline"
+    t.text "button"
   end
 
   add_foreign_key "contacts", "solutions"
