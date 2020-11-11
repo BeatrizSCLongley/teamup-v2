@@ -9,8 +9,7 @@ class ContactsController < ApplicationController
     @solution = Solution.find(params[:solution_id])
     @contact.solution = @solution
 
-    if @contact.save
-      # && verify_recaptcha(model: @contact)
+    if verify_recaptcha(model: @contact) && @contact.save
       if @solution.name == 'neuro-selfie™' || @solution.name == 'teamup∞™ 180°' || @solution.name == 'teamup∞™ 360°' || @solution.name == 'teamup∞™ for teams'
         redirect_to solution_path(@solution), notice: "Thanks, we have received your contact information. You will now be able to access a #{@solution.name} sample report"
       else
