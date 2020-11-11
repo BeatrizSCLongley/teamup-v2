@@ -10,9 +10,6 @@
             <p class="subtitles-grey">After you have submited your contact details a button will appear to allow you to access our <%= @solution.name %> sample report.</p>
           <% end %>
         </div>
-        <div class="margin-top-50">
-            <%= link_to "download sample report", root_path, id: "btn-download", class: "btn-orange hidden" %>
-        </div>
       </div>
     </div>
   </div>
@@ -31,7 +28,11 @@
           <%= simple_form_for [ @solution, @contact ], html: { id: 'form-download' } do |f| %>
             <%= f.input :name, label: 'Your first and last name please',  placeholder: 'Jane Leader', error: 'Name is mandatory' %>
             <%= f.input :email, placeholder: 'user@domain.com' %>
-            <%= f.input :message, as: :text %>
+            <% if @solution.name == 'General' %>
+              <%= f.input :message, as: :text, required: 'required' %>
+            <% else %>
+              <%= f.input :message, as: :text %>
+            <% end %>
             <%= recaptcha_tags %>
             <%= f.submit "Send", class: "btn-orange margin-top-50", id: "btn-send" %>
           <% end %>
