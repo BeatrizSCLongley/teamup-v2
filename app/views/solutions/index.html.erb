@@ -111,14 +111,13 @@
   <div class="container">
     <div class="row">
       <% @solutions.each_with_index do |solution, index| %>
-        <%#= unless solution.name == 'General' && 'Team effectiveness workshop series' %>
         <div class="col-12 col-md-7 col-lg-7 col-xl-7 margin-top-100">
           <p class="subtitles-grey"><strong><%= solution.tagline %></strong></p>
           <h2 class="<%= solution.name == 'neuro-selfie™' ? "title-blue" : "title-green" %>"><%= solution.name unless solution.name == 'General' || solution.name == 'Team effectiveness workshop series' %></h2>
           <p class="justify-text"><%= solution.description_one %></p>
           <p class="justify-text"><%= solution.description_two %></p>
           <div class="margin-top-50">
-            <% if solution.button == 'book your neuro-selfie™' %>
+            <% if solution.name == 'neuro-selfie™' %>
               <%= link_to solution.button, new_solution_contact_path(solution), class: 'btn-blue' %>
             <% elsif solution.name == 'General' || solution.name == 'Team effectiveness workshop series' %>
               <%= link_to solution.button, new_solution_contact_path(solution), class: 'hidden' %>
