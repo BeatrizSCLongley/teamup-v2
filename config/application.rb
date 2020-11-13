@@ -24,7 +24,7 @@ module TeamupV2
       domain:               'www.teamup.inc',
       user_name:            Rails.application.secrets.postmark_api_token,
       password:             Rails.application.secrets.postmark_api_token,
-      authentication:       :cram_md5, # I have tried :plain & did not work
+      authentication:       :tls, # :cram_md5 :tls :plain
       enable_starttls_auto: true
     }
   end
