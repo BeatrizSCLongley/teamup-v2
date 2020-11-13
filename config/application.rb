@@ -15,7 +15,17 @@ module TeamupV2
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
-    config.action_mailer.delivery_method = :postmark
-    config.action_mailer.postmark_settings = { api_token: Rails.application.credentials.postmark_api_token }
+    # config.action_mailer.delivery_method = :postmark
+    # config.action_mailer.postmark_settings = { api_token: Rails.application.credentials.postmark_api_token }
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      address:              'smtp.postmarkapp.com',
+      port:                 587,
+      domain:               'www.teamup.inc',
+      user_name:            Rails.application.secrets.postmark_api_token,
+      password:             Rails.application.secrets.postmark_api_token,
+      authentication:       :cram_md5,
+      enable_starttls_auto: true
+    }
   end
 end
