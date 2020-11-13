@@ -20,11 +20,11 @@ module TeamupV2
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
       address:              'smtp.postmarkapp.com',
-      port:                 25,
+      port:                 2525, # ports available 25, 2525, 587
       domain:               'www.teamup.inc',
       user_name:            Rails.application.secrets.postmark_api_token,
       password:             Rails.application.secrets.postmark_api_token,
-      authentication:       :plain,
+      authentication:       :cram_md5, # I have tried :plain & did not work
       enable_starttls_auto: true
     }
   end
