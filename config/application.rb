@@ -20,7 +20,7 @@ module TeamupV2
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
       address:              'smtp.postmarkapp.com',
-      port:                 2525,
+      port:                 25,
       domain:               'www.teamup.inc',
       user_name:            Rails.application.secrets.postmark_api_token,
       password:             Rails.application.secrets.postmark_api_token,
