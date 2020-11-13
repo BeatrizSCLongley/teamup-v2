@@ -16,7 +16,7 @@ class ContactsController < ApplicationController
         redirect_to new_solution_contact_path(@solution), notice: "Thanks, we have received your contact information. You will receive an email from hello@teamup.inc to your #{@contact.email} account"
       end
       message = ContactMailer.with(contact: @contact).new_contact
-      message.deliver_later # deliver_later - asynchronously or deliver_now
+      message.deliver_now # deliver_later - asynchronously or deliver_now
     else
       render :new, notice: "There was an error sending your contact form. Please try again."
     end
