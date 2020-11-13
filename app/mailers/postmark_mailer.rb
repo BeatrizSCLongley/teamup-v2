@@ -1,9 +1,9 @@
-class TestMailer < ApplicationMailer
+class PostmarkMailer < ApplicationMailer
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
   #
-  #   en.test_mailer.hello.subject
+  #   en.postmark_mailer.hello.subject
   #
   def hello
     @greeting = "Hi"
