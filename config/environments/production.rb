@@ -66,7 +66,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address:              'smtp.postmarkapp.com',
     port:                 2525, # ports available 25, 2525, 587
-    domain:               'www.teamup.inc',
+    domain:               'teamup.inc',
     user_name:            Rails.application.credentials.postmark_api_token, # secrets
     password:             Rails.application.credentials.postmark_api_token,
     authentication:       :cram_md5, # :cram_md5 :tls :plain
