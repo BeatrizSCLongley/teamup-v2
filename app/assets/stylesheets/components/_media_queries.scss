@@ -1,0 +1,146 @@
+// XS screen
+@media only screen and (max-width: 480px) {
+  // incease size of grey area
+  #home-solutions-gray {
+    height: 2317px;
+  }
+
+  .btn-green {
+    padding: 10px 22px;
+  }
+
+  #home-workshop {
+    height: 561px;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Small screen
+@media only screen and (max-width: 767px) {
+  // Render different html banner depending on screen size
+  #home-banner-mobile {
+    display: block;
+  }
+
+  #home-banner {
+    display: none;
+  }
+
+  // incease size of grey area
+  #home-solutions-gray {
+    height: 2204px;
+  }
+
+  // IMAGES
+  // resize intro pic
+  #home-intro-pic {
+    height: 410px;
+  }
+
+  // dissapear the images of the solutions
+  .image-hide {
+    display: none;
+  }
+
+  #home-sol-img-right {
+    display: none;
+  }
+
+  #home-neuroselfie-img {
+    display: none;
+  }
+}
+
+// NAVBAR
+// Small screen
+@media only screen and (max-width: 700px) {
+  #nav-icons-position {
+    right: 20px;
+    top: 20px;
+  }
+
+  #btn-navbar-about {
+    padding: 3px 17px;
+    font-size: 14px;
+    margin-right: 15px;
+  }
+
+  #btn-navbar-contact {
+    padding: 3px 8px;
+    font-size: 14px;
+  }
+
+  #navbar-logo {
+    height: 36px;
+    width: 89px;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Medium screen
+@media only screen and (min-width: 768px) {
+  #home-banner-mobile {
+    display: none;
+  }
+
+  #home-banner {
+    display: block;
+  }
+
+  // incease size of grey area
+  #home-solutions-gray {
+    height: 2207px;
+  }
+}
+
+// Medium screen
+@media only screen and (max-width: 991px) {
+  // resize btn on teamup for teams
+  #btn-teams {
+    padding: 10px 14px;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Large screen
+@media only screen and (min-width: 992px) {
+  // incease size of grey area
+  #home-solutions-gray {
+    height: 2158px;
+  }
+
+  // resize intro pic
+  #home-intro-pic {
+    height: 445px;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// INDEX
+// Render different Intro section
+@media only screen and (max-width: 767px) {
+  #home-intro-mobile {
+    display: block;
+  }
+  #home-intro {
+    display: none;
+  }
+  .divider_two {
+    height: 55px;
+  }
+  #home-how-img {
+    margin-top: 0px;
+    height: 299px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #home-intro-mobile {
+    display: none;
+  }
+  #home-intro {
+    display: block;
+  }
+}
+

@@ -62,6 +62,17 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.postmarkapp.com',
+    port:                 2525, # ports available 25, 2525, 587
+    domain:               'www.teamup.inc',
+    user_name:            Rails.application.credentials.postmark_api_token, # secrets
+    password:             Rails.application.credentials.postmark_api_token,
+    authentication:       :cram_md5, # :cram_md5 :tls :plain
+    enable_starttls_auto: true
+  }
+
   # config.action_mailer.delivery_method     = :postmark
   # config.action_mailer.postmark_settings   = { api_token: Rails.application.credentials.postmark_api_token }
   # config.action_mailer.default_url_options = { host: "www.teamup.inc" }

@@ -105,23 +105,3 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   margin-bottom: 50px;
 }
-
-// MEDIA QUERY -----------------------------------------------------------------
-// Render different html banner depending on screen size
-@media only screen and (max-width: 767px) {
-  #home-banner-mobile {
-    display: block;
-  }
-  #home-banner {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #home-banner-mobile {
-    display: none;
-  }
-  #home-banner {
-    display: block;
-  }
-}

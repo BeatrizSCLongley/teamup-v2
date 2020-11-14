@@ -46,34 +46,3 @@
 .img-report:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
-// -----------------------------------------------------------------------------
-// MEDIA QUERY
-// Small screen
-@media only screen and (max-width: 767px) {
-  // resize intro pic
-  #home-intro-pic {
-    height: 410px;
-  }
-
-  // dissapear the images of the solutions
-  .image-hide {
-    display: none;
-  }
-
-  #home-sol-img-right {
-    display: none;
-  }
-
-  #home-neuroselfie-img {
-    display: none;
-  }
-}
-
-// Medium screen
-@media only screen and (max-width: 991px) {
-  // resize intro pic
-  #home-intro-pic {
-    height: 445px;
-  }
-}
