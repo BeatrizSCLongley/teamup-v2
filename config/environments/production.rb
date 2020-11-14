@@ -67,8 +67,8 @@ Rails.application.configure do
     address:              'smtp.postmarkapp.com',
     port:                 2525, # ports available 25, 2525, 587
     domain:               'teamup.inc',
-    user_name:            Rails.application.secrets.postmark_api_token, # secrets
-    password:             Rails.application.secrets.postmark_api_token,
+    user_name:            Rails.application.credentials.postmark[:postmark_api_token], # secrets
+    password:             Rails.application.credentials.postmark[:postmark_api_token],
     authentication:       :cram_md5, # :cram_md5 :tls :plain
     enable_starttls_auto: true
   }
