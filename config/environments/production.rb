@@ -69,7 +69,7 @@ Rails.application.configure do
     domain:               'teamup.inc',
     user_name:            Rails.application.credentials.postmark[:postmark_api_token], # secrets
     password:             Rails.application.credentials.postmark[:postmark_api_token],
-    authentication:       :plain, # :cram_md5 :tls :plain
+    authentication:       :cram_md5, # :cram_md5 :tls :plain
     enable_starttls_auto: true
   }
 
