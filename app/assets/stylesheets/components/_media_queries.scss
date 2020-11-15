@@ -1,25 +1,18 @@
 // XS screen
-@media only screen and (max-width: 480px) {
-  // incease size of grey area
-  #home-solutions-gray {
-    height: 2317px;
-  }
+// @media only screen and (min-width: 576px) {
+//   // incease size of grey area
+//   #home-solutions-gray {
+//     height: 2317px;
+//   }
 
-  .btn-green {
-    padding: 10px 22px;
-  }
+//   .btn-green {
+//     padding: 10px 22px;
+//   }
 
-  #home-workshop {
-    height: 561px;
-  }
-}
-
-// iPhone 6/7/8
-@media only screen and (max-width: 667px) {
-  #home-solutions-gray {
-    height: 2295px;
-  }
-}
+//   #home-workshop {
+//     height: 561px;
+//   }
+// }
 
 // -----------------------------------------------------------------------------
 // Small screen
@@ -35,7 +28,16 @@
 
   // incease size of grey area
   #home-solutions-gray {
-    height: 2204px;
+    height: 2260px;
+  }
+
+  .btn-green {
+    padding: 10px 20px;
+  }
+
+  // workshop
+  #home-workshop {
+    height: 556px;
   }
 
   // IMAGES
