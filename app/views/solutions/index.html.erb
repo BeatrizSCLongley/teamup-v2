@@ -8,8 +8,8 @@
         <%= image_tag("logo.png", :alt => "logo", :id => "img-banner-logo-mobile") %>
         <div id="home-banner-text-mobile">
           <h2 class="title-blue">Creating high performing teams</h2>
-          <p class="justify-text">We believe that leaders and teams can always get better. Better Teams. Better Times. Striving for better is both healthy and something you can habituate.</p>
-          <p class="justify-text">So teamup∞™ offers a range of solutions built on neuroscience designed to accelerate individual and team performance.</p>
+          <p class="justify-text">We believe that leaders and teams can always get better. Better Teams, Better Times.</p>
+          <p class="justify-text">teamup∞™ offer a range of solutions based on applied neuroscience designed to accelerate individual and team performance.</p>
         </div>
         <%= link_to "our solutions", root_path(@root, :anchor => "home-solutions-gray"), id: "home-banner-btn-mobile" %>
       </div>
@@ -24,8 +24,8 @@
         <%= image_tag("logo.png", :alt => "logo", :id => "img-banner-logo") %>
         <div id="home-banner-text">
           <h2 class="title-blue">Creating high performing teams</h2>
-          <p class="justify-text">We believe that leaders and teams can always get better. Better Teams. Better Times. Striving for better is both healthy and something you can habituate.</p>
-          <p class="justify-text">So teamup∞™ offers a range of solutions built on neuroscience designed to accelerate individual and team performance.</p>
+          <p class="justify-text">We believe that leaders and teams can always get better. Better Teams, Better Times.</p>
+          <p class="justify-text">teamup∞™ offer a range of solutions based on applied neuroscience designed to accelerate individual and team performance.</p>
         </div>
         <%= link_to "our solutions", root_path(@root, :anchor => "home-solutions-gray"), id: "home-banner-btn" %>
       </div>
@@ -133,13 +133,13 @@
             <%= link_to image_tag('report_180.jpg', alt: 'report', class: 'img-report'), new_solution_contact_path(solution) %>
           <% elsif solution.name == 'teamup∞™ 360°' %>
             <%= link_to image_tag('report_360.jpg', alt: 'report', class: 'img-report'), new_solution_contact_path(solution) %>
-          <% elsif solution.name == 'teamup∞™ for teams' %>
+          <% elsif solution.name == 'teamup∞™ Team Effectiveness' %>
             <%= link_to image_tag('report_teams.jpg', alt: 'report', class: 'img-report'), new_solution_contact_path(solution) %>
           <% end %>
         </div>
       </div>
       <div class="row" id="solution-separation-container">
-        <div class="<%= solution.name == 'teamup∞™ for teams' || solution.name == 'General' || solution.name == 'Team effectiveness workshop series' ? "hidden" : "solutions-separation" %>"></div>
+        <div class="<%= solution.name == 'teamup∞™ Team Effectiveness' || solution.name == 'General' || solution.name == 'Team effectiveness workshop series' ? "hidden" : "solutions-separation" %>"></div>
       </div>
     <% end %>
   </div>
@@ -154,7 +154,7 @@
           <p class="subtitles-grey"><strong>Go beyond</strong></p>
           <h2 class="title-orange"><%= solution.name %></h2>
           <p class="justify-text">Any one of the teamup∞™ assessments is an incredibly powerful diagnostic to better understand how to elevate your team leadership or effectiveness. However, sometimes we need expert support to bring the action plan to life, which is where the workshop series comes in.</p>
-          <p class="justify-text">We can design and deliver virtual or in-person workshops which can accelerate your individual or team’s growth. These are fully customised to your needs and can be delivered across different time frames ranging from one-time launch workshops, to facilitated 12 month team effectiveness journeys.</p>
+          <p class="justify-text">We can design and deliver virtual or in-person workshops which can accelerate your individual or team’s growth. These are fully customized to your needs and can be delivered across different time frames ranging from one-time launch workshops, to facilitated 12-month team effectiveness journeys.</p>
           <div class="margin-top-50">
             <%= link_to "find out more", new_solution_contact_path(solution), class: "btn-orange"%>
           </div>
