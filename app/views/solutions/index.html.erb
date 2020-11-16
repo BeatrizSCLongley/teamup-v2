@@ -109,9 +109,9 @@
       </div>
   </div>
   <div class="container">
-    <div class="row">
-      <% @solutions.each_with_index do |solution, index| %>
-        <div class="col-12 col-md-7 col-lg-7 col-xl-7 margin-top-100">
+    <% @solutions.each_with_index do |solution, index| %>
+      <div class="row">
+        <div class="col-12 col-md-7 col-lg-7 col-xl-7 margin-top-50">
           <p class="subtitles-grey"><strong><%= solution.tagline %></strong></p>
           <h2 class="<%= solution.name == 'neuro-selfie™' ? "title-blue" : "title-green" %>"><%= solution.name unless solution.name == 'General' || solution.name == 'Team effectiveness workshop series' %></h2>
           <p class="justify-text"><%= solution.description_one %></p>
@@ -126,7 +126,7 @@
             <% end %>
           </div>
         </div>
-        <div class="col-12 col-md-5 col-lg-5 col-xl-5 home-sol-img-right image-hide margin-top-100">
+        <div class="col-12 col-md-5 col-lg-5 col-xl-5 home-sol-img-right image-hide margin-top-50">
           <% if solution.name == 'neuro-selfie™' %>
             <%= image_tag('report_ns.jpg', alt: 'report', class: 'img-report') %>
           <% elsif solution.name == 'teamup∞™ 180°' %>
@@ -137,8 +137,11 @@
             <%= image_tag('report_teams.jpg', alt: 'report', class: 'img-report') %>
           <% end %>
         </div>
-      <% end %>
-    </div>
+      </div>
+      <div class="row" id="solution-separation-container">
+        <div class="<%= solution.name == 'teamup∞™ for teams' || solution.name == 'General' || solution.name == 'Team effectiveness workshop series' ? "hidden" : "solutions-separation" %>"></div>
+      </div>
+    <% end %>
   </div>
 </div>
 
