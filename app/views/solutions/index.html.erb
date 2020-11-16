@@ -128,13 +128,13 @@
         </div>
         <div class="col-12 col-md-5 col-lg-5 col-xl-5 home-sol-img-right image-hide margin-top-50">
           <% if solution.name == 'neuro-selfie™' %>
-            <%= image_tag('report_ns.jpg', alt: 'report', class: 'img-report') %>
+            <%= link_to image_tag('report_ns.jpg', alt: 'report', class: 'img-report'), new_solution_contact_path(solution) %>
           <% elsif solution.name == 'teamup∞™ 180°' %>
-            <%= image_tag('report_180.jpg', alt: 'report', class: 'img-report') %>
+            <%= link_to image_tag('report_180.jpg', alt: 'report', class: 'img-report'), new_solution_contact_path(solution) %>
           <% elsif solution.name == 'teamup∞™ 360°' %>
-            <%= image_tag('report_360.jpg', alt: 'report', class: 'img-report') %>
+            <%= link_to image_tag('report_360.jpg', alt: 'report', class: 'img-report'), new_solution_contact_path(solution) %>
           <% elsif solution.name == 'teamup∞™ for teams' %>
-            <%= image_tag('report_teams.jpg', alt: 'report', class: 'img-report') %>
+            <%= link_to image_tag('report_teams.jpg', alt: 'report', class: 'img-report'), new_solution_contact_path(solution) %>
           <% end %>
         </div>
       </div>
