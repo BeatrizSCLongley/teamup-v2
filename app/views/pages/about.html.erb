@@ -1,57 +1,38 @@
-<div id="show-banner">
+<div class="motion-banner">
   <%= video_tag "background-white.mp4", :type => "video/mp4", autoplay: :autoplay, preload: 'auto', muted: :muted, loop: :loop,:height => '100%', :width => "100%", :id => "banner-show-video", :style => "object-fit: cover"%>
 </div>
-<!--
-<div id="about-banner">
 
-</div> -->
-
-<div class="container">
+<div class="container margin-top-100">
   <div class="row">
-    <div class="col text-middle">
-      <h2 class="title-purple" id="about-title">Our origin story</h2>
-      <p>Andy, a business leader and organizational psychologist, & Ali, a leadership & strategy specialist, met studying applied neuroscience. Over many heated discussions, they formed a view that the prevailing popular models for team leadership were fundamentally flawed.</p>
+    <div class="col-12 col-xl-8">
+      <p class="subtitles-grey"><strong>The team behind teamup∞™</strong></p>
+      <h2 class="title-purple">Who we are</h2>
+      <p class="justify-text">teamup∞™ are a boutique leadership and team development consultancy who believe to our core that by focusing on enhancing the team environment, organizations have the ability to dramatically impact performance, belonging, well-being and fun. <strong>Better Teams. Better Times.</strong></p>
 
-      <p><strong>The existing team models were based on outmoded MBA thinking and far away from what the neuroscience was teaching them about what really drives high performance.</strong></p>
+      <p class="justify-text">We are headquartered in London & Berlin, but with an eco-system of global associates to be able to draw from truly diverse skillsets and profiles to best meet an organization's needs.</p>
 
-      <p>This was so frustrating to us. We both felt passionately that better teams lead to better times and a better world. <strong>Great outcomes happen in eco systems and teams, not through individuals.</strong> All of the solutions to the big and small, to the fun, to the sports, to the commercial – depend ultimately on high performing teams.</p>
+      <p class="justify-text">Our sibling consultancies are www.mind-3.com and www.psych-io.com</p>
+      <!-- Add logo images with link to webpages -->
+
+      <p class="justify-text">Our network have delivered coaching and development programs in over <strong>60 countries</strong> across <strong>6 continents</strong>.</p>
+      <!-- map to come here & add 'illustrated by the map below.' to the p -->
+
+      <p class="justify-text">Within our affiliate network we have faculty on the ground (or virtually) in all continents, supported by world-class project management who make working with us as effortless as it should be. We strive to bring the personalization of a leadership and team development boutique, while understanding the importance and requirements of international scale.</p>
     </div>
   </div>
 </div>
 
-<div id="about-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col text-middle">
-        <p>The epiphany for the teamup∞ model came when attending a conference in New York. The room was jammed. Standing room only with every seat taken, every wall leant against. The demand from business to understand the psychology of high performance in teams was palpable.</p>
-
-        <p>The idea sparked while listening to a panel of Neuroscientists discussing optimal differentiation in chickens, and how the coups with a higher proportion of Alpha males produced less eggs. In other words, beware of ‘All-Star’ teams – that is not the route to high performance. Ali & Andy looked around the room of 100+ senior business leaders and knew that there was a deep well of more profound insights they could organize from the neuroscience which leaders could apply for teaming.</p>
-      </div>
+<div class="container margin-top-100">
+  <div class="row" id="about-founders">
+    <div class="col-12 col-xl-8 text-right">
+      <p class="subtitles-grey"><strong>The people behind teamup∞™</strong></p>
+      <h2 class="title-pink">Meet our founders</h2>
+      <p>Andrew Longley is a business leader and organizational psychologist</p>
+      <p>Ali is a leadership & strategy specialist</p>
+      <p>Click on each of the pictures bellow to learn more about our founders.</p>
+      <!-- Images to go here with modal -->
     </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col text-middle">
-      <p>So, Andy and Ali went about codifying the behavioural science research into a model for high performing teams. It took 3 years. Meanwhile both ran leadership at major companies, increasingly convinced of the need for a teaming model that would really work.</p>
-
-      <p>Once the teamup∞ model was codified, they took it to academia to validate. Ali was studying neuroscience at HarvardX at the time and being mentored by a Professor at Oxford University. This thumbs up from academia, gave Andy and Ali full confidence to launch teamup∞, assured of the rigour of the underlying science.</p>
-
-      <p>The momentum then kicked in. Ali & Andy were working with leading leadership faculty from all the world’s leading business schools and consultancies during this time, many of whom loved the teamup∞ model so much they signed up to be the Home Team of our Associate faculty.</p>
-
-      <p>And we’ve never looked back. We’ve taken the teamup∞ model out to the world of sport and business and seen a dramatic difference.</p>
-
-      <div class="row divider"></div>
-        <div class=" row text-middle">
-          <p id="quote"><em>“Once you've worked with a high performing team, you'll never accept an average team again”</em></p>
-          <p id="quote-author">(Managing Director of the Americas for a global retail brand)</p>
-        </div>
-      </div>
-
-      <p class="home-text-middle">So now our aspiration is to build a better world through better teams. We are bringing the world of work in sync with the true drivers of human behavior and the possibilities are endless.</p>
-
-      <p> <strong>We can’t wait to share more and unlock the potential of your team!</strong></p>
-    </div>
-  </div>
-</div>
+<%= render 'pages/about_time_line' %>

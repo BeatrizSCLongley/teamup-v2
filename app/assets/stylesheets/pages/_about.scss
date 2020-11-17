@@ -1,10 +1,42 @@
-#about-title {
-  font-size: 40px;
-  margin-bottom: 40px;
+#about-founders {
+  display: flex;
+  justify-content: flex-end;
 }
 
-#about-grey {
-  background-color: rgb(242, 242, 242);
-  padding: 30px 0px 15px 0px;
-  margin-bottom: 30px;
+// -----------------------------------------------------------------------------
+#time-line-container-one {
+  height: 346px;
+}
+
+#time-line-container-two {
+  height: 370px;
+}
+
+#time-line-container-three {
+  height: 297px;
+}
+
+#time-line-container-four {
+  height: 277px;
+}
+
+// ---------------------------------------
+#time-line-middle {
+  display: flex;
+  justify-content: center;
+}
+
+.time-line-separation {
+  margin-top: 10px;
+  background-color: var(--teamupYellow);
+  height: 4px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.time-line-vertical {
+  background-color: var(--teamupYellow);
+  height: 100%;
+  width: 4px;
+  border-radius: 3px;
 }

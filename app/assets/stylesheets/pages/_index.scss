@@ -1,5 +1,5 @@
 // HOME - INTRO
-.home-text-right { // GENERAL
+.home-text-right {
   text-align: right;
   padding-top: 101px;
 }
@@ -14,6 +14,12 @@
   font-weight: bold;
   font-size: 25px;
   color: var(--teamupPink);
+}
+
+#quote-orange {
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--teamupOrange);
 }
 
 #quote-author {
