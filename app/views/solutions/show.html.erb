@@ -26,22 +26,14 @@
             <%= link_to "download teamup∞™ 180° sample report", "https://drive.google.com/file/d/1SN-c73-kVXU0CGZYfPFST0_RcCsVWxWU/view", target: :_blank, class: "btn-green-show"%>
            <% elsif @solution.name == 'teamup∞™ 360°' %>
             <%= link_to "download teamup∞™ 360° sample report", "https://drive.google.com/file/d/1SN-c73-kVXU0CGZYfPFST0_RcCsVWxWU/view", target: :_blank, class: "btn-green-show"%>
-          <% elsif @solution.name == 'teamup∞™ for teams' %>
+          <% elsif @solution.name == 'teamup∞™ Team Effectiveness' %>
             <%= link_to "download teamup∞™ for teams sample report", "https://drive.google.com/file/d/1SN-c73-kVXU0CGZYfPFST0_RcCsVWxWU/view", target: :_blank, class: "btn-green-show"%>
           <% end %>
         </div>
       </div>
 
       <div class="col-12 col-md-5 col-lg-5 col-xl-5 home-sol-img-right image-hide">
-        <% if @solution.name == 'neuro-selfie™' %>
-          <%= image_tag('report_ns.jpg', alt: 'report', class: 'img-report') %>
-        <% elsif @solution.name == 'teamup∞™ 180°' %>
-          <%= image_tag('report_180.jpg', alt: 'report', class: 'img-report') %>
-        <% elsif @solution.name == 'teamup∞™ 360°' %>
-          <%= image_tag('report_360.jpg', alt: 'report', class: 'img-report') %>
-        <% elsif @solution.name == 'teamup∞™ for teams' %>
-          <%= image_tag('report_teams.jpg', alt: 'report', class: 'img-report') %>
-        <% end %>
+        <%= cl_image_tag @solution.photo.key, alt: "report", class: "img-report" %>
       </div>
     </div>
   </div>

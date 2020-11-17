@@ -127,14 +127,8 @@
           </div>
         </div>
         <div class="col-12 col-md-5 col-lg-5 col-xl-5 home-sol-img-right image-hide margin-top-50">
-          <% if solution.name == 'neuro-selfie™' %>
-            <%= link_to image_tag('report_ns.jpg', alt: 'report', class: 'img-report'), new_solution_contact_path(solution) %>
-          <% elsif solution.name == 'teamup∞™ 180°' %>
-            <%= link_to image_tag('report_180.jpg', alt: 'report', class: 'img-report'), new_solution_contact_path(solution) %>
-          <% elsif solution.name == 'teamup∞™ 360°' %>
-            <%= link_to image_tag('report_360.jpg', alt: 'report', class: 'img-report'), new_solution_contact_path(solution) %>
-          <% elsif solution.name == 'teamup∞™ Team Effectiveness' %>
-            <%= link_to image_tag('report_teams.jpg', alt: 'report', class: 'img-report'), new_solution_contact_path(solution) %>
+          <% unless solution.name == 'General' || solution.name == 'Team effectiveness workshop series' %>
+            <%= link_to cl_image_tag(solution.photo.key, alt: "report", class: "img-report"), new_solution_contact_path(solution) %>
           <% end %>
         </div>
       </div>
