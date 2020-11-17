@@ -11,8 +11,12 @@
 
       <p class="justify-text">We are headquartered in London & Berlin, but with an eco-system of global associates to be able to draw from truly diverse skillsets and profiles to best meet an organization's needs.</p>
 
-      <p class="justify-text">Our sibling consultancies are www.mind-3.com and www.psych-io.com</p>
-      <!-- Add logo images with link to webpages -->
+      <p class="justify-text">Our sibling consultancies are:</p>
+      <div id="about-consultancies-img">
+        <%= link_to image_tag('mind3_logo.png', alt: 'mind3 logo', id: 'img-consultancies-mind'), 'https://www.mind-3.com', target: :_blank %>
+        <%#= link_to image_tag('psychIO_logo.png', alt: 'psychIO logo', id: 'img-consultancies-psychio'), 'https://www.psych-io.com', target: :_blank %>
+        <%= image_tag("psychIO_logo.png", :alt => "psychIO logo", :id => "img-consultancies-psychio") %>
+      </div>
 
       <p class="justify-text">Our network have delivered coaching and development programs in over <strong>60 countries</strong> across <strong>6 continents</strong>.</p>
       <!-- map to come here & add 'illustrated by the map below.' to the p -->
@@ -36,3 +40,4 @@
 </div>
 
 <%= render 'pages/about_time_line' %>
+<%= render 'pages/about_time_line_mobile' %>

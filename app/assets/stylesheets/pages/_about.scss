@@ -3,6 +3,12 @@
   justify-content: flex-end;
 }
 
+#about-consultancies-img {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 22px;
+}
+
 // -----------------------------------------------------------------------------
 #time-line-container-one {
   height: 346px;
@@ -17,7 +23,7 @@
 }
 
 #time-line-container-four {
-  height: 277px;
+  height: 233px;
 }
 
 // ---------------------------------------
@@ -39,4 +45,21 @@
   height: 100%;
   width: 4px;
   border-radius: 3px;
+}
+
+// ---------------------------------------
+#time-line-container-mobile-one {
+  height: 437px;
+}
+
+#time-line-container-mobile-two {
+  height: 485px;
+}
+
+#time-line-container-mobile-three {
+  height: 399px;
+}
+
+#time-line-container-mobile-four {
+  height: 228px;
 }
