@@ -1,5 +1,5 @@
 <div class="motion-banner">
-  <%= video_tag "background-white.mp4", :type => "video/mp4", autoplay: :autoplay, preload: 'auto', muted: :muted, loop: :loop,:height => '100%', :width => "100%", :id => "banner-show-video", :style => "object-fit: cover"%>
+  <%= cl_video_tag("https://res.cloudinary.com/beatrizscl/video/upload/v1605625682/teamup/background-white_opnwrr.mp4", id: "banner-show-video", height: '100%', width: "100%", autoplay: :autoplay, preload: 'auto', muted: :muted, loop: :loop, style: "object-fit: cover") %>
 </div>
 
 <div class="container margin-top-100">
@@ -13,9 +13,9 @@
 
       <p class="justify-text">Our sibling consultancies are:</p>
       <div id="about-consultancies-img">
-        <%= link_to image_tag('mind3_logo.png', alt: 'mind3 logo', id: 'img-consultancies-mind'), 'https://www.mind-3.com', target: :_blank %>
+        <%= link_to cl_image_tag("https://res.cloudinary.com/beatrizscl/image/upload/v1605625696/teamup/mind3_logo_cyp1st.png", alt: "mind3 logo", id: "img-consultancies-mind"), 'https://www.mind-3.com', target: :_blank %>
         <%#= link_to image_tag('psychIO_logo.png', alt: 'psychIO logo', id: 'img-consultancies-psychio'), 'https://www.psych-io.com', target: :_blank %>
-        <%= image_tag("psychIO_logo.png", :alt => "psychIO logo", :id => "img-consultancies-psychio") %>
+        <%= cl_image_tag("https://res.cloudinary.com/beatrizscl/image/upload/v1605625696/teamup/psychIO_logo_acgrag.png", alt: "psych-io logo", id: "img-consultancies-psychio") %>
       </div>
 
       <p class="justify-text">Our network have delivered coaching and development programs in over <strong>60 countries</strong> across <strong>6 continents</strong>.</p>
@@ -39,7 +39,7 @@
     <div class="col" id="about-founders-img">
       <!-- ALI TISDALL -->
       <!-- Button trigger modal -->
-      <%= image_tag "ali_tisdall.jpg", :alt => "Ali Tisdall", :id => "img-founders-ali", data: { toggle: "modal", target: "#aliModalCenter" } %>
+      <%= cl_image_tag "https://res.cloudinary.com/beatrizscl/image/upload/v1605625681/teamup/ali_tisdall_nkbsus.jpg", alt: "Ali Tisdall", id: "img-founders-ali", data: { toggle: "modal", target: "#aliModalCenter" } %>
 
       <!-- Modal -->
       <div class="modal fade" id="aliModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -63,7 +63,7 @@
 
       <!-- ANDY LONGLEY -->
       <!-- Button trigger modal -->
-      <%= image_tag "andy_longley.jpg", :alt => "Andy Longley", :id => "img-founders-andy", data: { toggle: "modal", target: "#andyModalCenter" } %>
+       <%= cl_image_tag "https://res.cloudinary.com/beatrizscl/image/upload/v1605625681/teamup/andy_longley_a47we0.jpg", alt: "Andy Longley", id: "img-founders-andy", data: { toggle: "modal", target: "#andyModalCenter" } %>
 
       <!-- Modal -->
       <div class="modal fade" id="andyModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
