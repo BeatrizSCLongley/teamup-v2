@@ -37,6 +37,9 @@ gem 'recaptcha', require: 'recaptcha/rails'
 # Postmark - email service
 gem 'postmark-rails'
 
+# Cloudinary
+gem 'cloudinary', '~> 1.16.0'
+
 # Dotenv - secure keys in development
 gem 'dotenv-rails', groups: [:development, :test]
 
