@@ -46,3 +46,37 @@
 .img-report:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
+// -----------------------------------------------------------------------------
+// ABOUT
+#img-consultancies-mind {
+  width: 109px;
+  height: 67px;
+}
+
+#img-consultancies-psychio {
+  width: 85px;
+  height: 68px;
+}
+
+#img-founders-andy {
+  width: 210px;
+  height: 266px;
+
+  &:hover {
+    width: 220px;
+    height: 276px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+}
+
+#img-founders-ali {
+  width: 236px;
+  height: 266px;
+
+  &:hover {
+    width: 246px;
+    height: 276px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+}

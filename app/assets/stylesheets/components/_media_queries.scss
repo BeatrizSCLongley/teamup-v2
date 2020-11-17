@@ -1,5 +1,5 @@
 // XS screen
-// @media only screen and (min-width: 576px) {
+// @media only screen and (min-width: 320px) {
 //   // incease size of grey area
 //   #home-solutions-gray {
 //     height: 2317px;
@@ -157,3 +157,25 @@
   }
 }
 
+// ------------------------------------------
+// ABOUT
+// Render different time-line sections
+@media only screen and (max-width: 767px) {
+  #about-time-line-mobile {
+    display: block;
+  }
+
+  #about-time-line {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #about-time-line-mobile {
+    display: none;
+  }
+
+  #about-time-line {
+    display: block;
+  }
+}
