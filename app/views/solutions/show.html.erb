@@ -1,5 +1,5 @@
 <div class="motion-banner">
-  <%= video_tag "background-white.mp4", :type => "video/mp4", autoplay: :autoplay, preload: 'auto', muted: :muted, loop: :loop,:height => '100%', :width => "100%", :id => "banner-show-video", :style => "object-fit: cover"%>
+  <%= cl_video_tag("https://res.cloudinary.com/beatrizscl/video/upload/v1605625682/teamup/background-white_opnwrr.mp4", id: "banner-show-video", height: '100%', width: "100%", autoplay: :autoplay, preload: 'auto', muted: :muted, loop: :loop, style: "object-fit: cover") %>
 </div>
 
 <% flash.each do |type, msg| %>
