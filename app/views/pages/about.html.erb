@@ -33,8 +33,58 @@
       <h2 class="title-pink">Meet our founders</h2>
       <p>Andrew Longley is a business leader and organizational psychologist</p>
       <p>Ali is a leadership & strategy specialist</p>
-      <p>Click on each of the pictures bellow to learn more about our founders.</p>
-      <!-- Images to go here with modal -->
+    </div>
+  </div>
+  <div class="row margin-top-50 margin-bottom-50">
+    <div class="col" id="about-founders-img">
+      <!-- ALI TISDALL -->
+      <!-- Button trigger modal -->
+      <%= image_tag "ali_tisdall.jpg", :alt => "Ali Tisdall", :id => "img-founders-ali", data: { toggle: "modal", target: "#aliModalCenter" } %>
+
+      <!-- Modal -->
+      <div class="modal fade" id="aliModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title title-pink-v2" id="exampleModalLongTitle">Ali Tisdall</h2>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="modal-content">
+              <%= render 'pages/about_founders_ali' %>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-pink" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ANDY LONGLEY -->
+      <!-- Button trigger modal -->
+      <%= image_tag "andy_longley.jpg", :alt => "Andy Longley", :id => "img-founders-andy", data: { toggle: "modal", target: "#andyModalCenter" } %>
+
+      <!-- Modal -->
+      <div class="modal fade" id="andyModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title title-pink-v2" id="exampleModalLongTitle">Andy Longley</h2>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="modal-content">
+              <%= render 'pages/about_founders_andy' %>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-pink" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
