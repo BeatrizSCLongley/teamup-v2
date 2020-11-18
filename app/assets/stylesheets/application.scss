@@ -11,6 +11,8 @@
 @import "pages/show";
 @import "pages/about";
 @import "pages/contact";
+@import "pages/terms_conditions";
+@import "pages/privacy_policy";
 
 // CSS components
 @import "components/banner";
@@ -22,6 +24,7 @@
 @import "components/titles";
 @import "components/media_queries";
 @import "components/modal";
+@import "components/link";
 
 // ---------------------------------------------------
 body {

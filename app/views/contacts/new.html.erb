@@ -25,6 +25,11 @@
     <div class="row">
       <div class="col">
         <div id="contact-form">
+          <%= content_for(:the_links) do %>
+              Accept <%= link_to "Terms & Conditions", terms_conditions_path,:remote => true, class: "link-color-orange" %>
+              and <%=link_to "privacy Policy", privacy_policy_path, :remote => true, class: "link-color-orange" %>
+          <% end %>
+
           <%= simple_form_for [ @solution, @contact ], html: { id: 'form-download' } do |f| %>
             <%= f.input :name, label: 'Your first and last name please',  placeholder: 'Jane Leader', error: 'Name is mandatory' %>
             <%= f.input :email, placeholder: 'user@domain.com' %>
@@ -33,6 +38,7 @@
             <% else %>
               <%= f.input :message, as: :text %>
             <% end %>
+            <%= f.input :terms, :as => :boolean, required: 'required', :label => content_for(:the_links) %>
             <%= recaptcha_tags %>
             <%= f.submit "Send", class: "btn-orange margin-top-50", id: "btn-send" %>
           <% end %>

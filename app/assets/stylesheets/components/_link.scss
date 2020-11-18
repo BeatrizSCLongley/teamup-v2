@@ -1,0 +1,8 @@
+.link-color-orange {
+  color: var(--teamupOrange);
+
+  &:hover {
+    text-decoration: none;
+    color: var(--teamupPink);
+  }
+}
