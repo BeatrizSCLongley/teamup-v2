@@ -26,6 +26,6 @@ class ContactsController < ApplicationController
 
   def contact_params
     # No need for topic as it's defined by the solution's name
-    params.require(:contact).permit(:name, :email, :message)
+    params.require(:contact).permit(:name, :email, :message, :terms)
   end
 end
