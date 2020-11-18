@@ -5,9 +5,9 @@
         <h2 class="title-orange margin-top-50"><%= @solution.name %> contact form</h2>
         <div id="contact-banner-intro">
           <p>We would love to hear from you.</p>
-          <p>Please provide your contact details below and feel free to leave my additional comments or questions you might have.</p>
+          <p>Please provide your contact details below and feel free to leave any additional comments or questions you might have.</p>
           <% unless @solution.name == 'General' || @solution.name == 'Team effectiveness workshop series' %>
-            <p class="subtitles-grey">After you have submited your contact details a button will appear to allow you to access our <%= @solution.name %> sample report.</p>
+            <p class="subtitles-grey">After you have submited your contact details you will be able to download our <%= @solution.name %> sample report.</p>
           <% end %>
         </div>
       </div>
