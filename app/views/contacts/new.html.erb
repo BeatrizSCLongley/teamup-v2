@@ -38,7 +38,7 @@
             <% else %>
               <%= f.input :message, as: :text %>
             <% end %>
-            <%= f.input :terms, :as => :boolean, required: 'required', :label => content_for(:the_links) %>
+            <%= f.input :terms, as: :boolean, required: 'required', :label => content_for(:the_links) %>
             <%= recaptcha_tags %>
             <%= f.submit "Send", class: "btn-orange margin-top-50", id: "btn-send" %>
           <% end %>
