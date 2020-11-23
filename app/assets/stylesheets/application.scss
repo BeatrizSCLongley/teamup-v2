@@ -25,10 +25,14 @@
 @import "components/media_queries";
 @import "components/modal";
 @import "components/link";
+@import "components/quote";
+
+// Font type
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
 // ---------------------------------------------------
 body {
-  font-family: "Avenir Next";
+  font-family: "Avenir Next", 'Nunito', sans-serif;
 }
 
 // General css
@@ -41,6 +45,14 @@ body {
   p {
     font-size: 11px;
   }
+
+  #banner-quote {
+    font-size: 19px;
+  }
+
+  #banner-author {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 1198px) {
@@ -50,5 +62,13 @@ body {
 
   p {
     font-size: 14px;
+  }
+
+  #banner-quote {
+    font-size: 19px;
+  }
+
+  #banner-author {
+    font-size: 16px;
   }
 }

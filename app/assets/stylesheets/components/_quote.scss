@@ -1,0 +1,44 @@
+// HOME BANNER - Quote
+#home-banner-quote {
+  margin-left: 15px;
+  margin-bottom: 46px;
+}
+
+#banner-quote {
+  // font-weight: bold;
+  font-size: 25px;
+  color: var(--teamupGreen);
+}
+
+// mobile
+#home-banner-quote-mobile {
+  margin-left: 7px;
+  margin-bottom: 46px;
+}
+
+#banner-quote-mobile {
+  // font-weight: bold;
+  font-size: 22px;
+  color: var(--teamupGreen);
+}
+
+// -----------------------------------------------------------------------------
+// HOME - Quote
+#quote {
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--teamupPink);
+}
+
+#quote-author {
+  font-size: 20px;
+  color: var(--teamupGrey)
+}
+
+// -----------------------------------------------------------------------------
+// ABOUT
+#quote-orange {
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--teamupOrange);
+}

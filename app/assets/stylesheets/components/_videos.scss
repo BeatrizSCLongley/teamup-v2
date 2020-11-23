@@ -1,4 +1,4 @@
-#banner-show-video {
+.banner-motion-video {
   position: relative;
   right: 0;
   bottom: 0;
@@ -6,4 +6,10 @@
   left: 0;
   overflow: hidden;
   z-index: 1;
+}
+
+#banner-show-video {
+  top: 0;
+  position: relative;
+  overflow: hidden;
 }
