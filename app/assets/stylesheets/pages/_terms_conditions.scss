@@ -8,3 +8,19 @@
   }
 }
 
+#terms-conditions-intro {
+  &::before {
+    content: ''; // so the img shows up
+    background-image: url(https://res.cloudinary.com/beatrizscl/image/upload/v1605625681/teamup/connect_background_izjcvz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+    position: absolute; // make it the same size as the parent
+    top: 0px; // these 4 properties make it so the img doesn't colapse
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    min-width: 100%;
+    z-index: -1;
+  }
+}

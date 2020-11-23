@@ -26,6 +26,10 @@
     display: none;
   }
 
+  #home-banner-btn {
+    padding: 10px 182px;
+  }
+
   // incease size of grey area
   #home-solutions-gray {
     height: 2215px;
@@ -84,7 +88,8 @@
   }
 
   #navbar-logo {
-    height: 36px;
+    margin-left: 0px;
+    height: 31px;
     width: 89px;
   }
 }
@@ -100,6 +105,10 @@
     display: block;
   }
 
+  // #home-banner-btn {
+  //   padding: 10px 90px;
+  // }
+
   // incease size of grey area
   #home-solutions-gray {
     height: 2207px;
@@ -112,6 +121,10 @@
   #btn-teams {
     padding: 10px 14px;
   }
+
+  // #home-banner-btn {
+  //   padding: 10px 53px;
+  // }
 }
 
 // -----------------------------------------------------------------------------
@@ -127,6 +140,20 @@
     height: 445px;
   }
 }
+
+// -----------------------------------------------------------------------------
+// X-Large screen
+@media only screen and (min-width: 1441px) {
+  #home-banner {
+    height: 900px;
+  }
+}
+
+// @media only screen and (max-width: 1199px) {
+//   #home-banner-btn {
+//     padding: 10px 105px;
+//   }
+// }
 
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
