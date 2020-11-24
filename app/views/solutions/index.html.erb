@@ -3,7 +3,7 @@
     <div class="row" id="home-banner-container-mobile">
       <div class="col">
         <div id="home-banner-video-mobile">
-          <%= cl_video_tag("https://res.cloudinary.com/beatrizscl/video/upload/v1605624509/teamup/lined_head_silhouette_o0asnj.mp4", id: "banner-video-head", height: '100%', width: "100%", autoplay: :autoplay, preload: 'auto', muted: :muted ) %>
+          <%= cl_video_tag("https://res.cloudinary.com/beatrizscl/video/upload/v1605624509/teamup/lined_head_silhouette_o0asnj.mp4", id: "banner-video-head", height: '100%', width: "100%", autoplay: :autoplay, preload: 'auto', muted: :muted, overflow: 'hidden' ) %>
         </div>
         <%= cl_image_tag("https://res.cloudinary.com/beatrizscl/image/upload/v1606127656/teamup/MIND_teamup_logo_infinity_uqc05v.png", alt: "logo", id: "img-banner-logo-mobile") %>
         <div id="home-banner-text-mobile">
@@ -36,7 +36,7 @@
         <%= link_to "our solutions", root_path(@root, :anchor => "home-solutions-gray"), id: "home-banner-btn" %>
       </div>
       <div class="col-7 col-xl-6">
-        <%= cl_video_tag("https://res.cloudinary.com/beatrizscl/video/upload/v1605624509/teamup/lined_head_silhouette_o0asnj.mp4", id: "banner-video-head", height: '100%', width: "100%", autoplay: :autoplay, preload: 'auto', muted: :muted, style: "object-fit: none") %>
+        <%= cl_video_tag("https://res.cloudinary.com/beatrizscl/video/upload/v1605624509/teamup/lined_head_silhouette_o0asnj.mp4", id: "banner-video-head", height: '100%', width: "100%", autoplay: :autoplay, preload: 'auto', muted: :muted, style: "object-fit: none", overflow: 'hidden') %>
         <%#= video_tag "lined_head_silhouette.mp4", :type => "video/mp4", autoplay: :autoplay, preload: 'auto', muted: :muted, :height => '100%', :width => "100%", :id => "banner-video-head", :style => "object-fit: none"%>
       </div>
     </div>
