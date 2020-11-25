@@ -11,7 +11,7 @@ class ContactsController < ApplicationController
 
     if verify_recaptcha(model: @contact) && @contact.save
       if @solution.name == 'neuro-selfie™' || @solution.name == 'teamup∞™ 180°' || @solution.name == 'teamup∞™ 360°' || @solution.name == 'teamup∞™ Team Effectiveness'
-        redirect_to solution_path(@solution), notice: "Thanks, we have received your contact information. You will now be able to access a #{@solution.name} sample report"
+        redirect_to solution_path(@solution), notice: "Thanks, we have received your contact information. Click on the button to download the #{@solution.name} sample report"
       else
         redirect_to new_solution_contact_path(@solution), notice: "Thanks, we have received your contact information. You will receive an email from hello@teamup.inc to your #{@contact.email} account"
       end
