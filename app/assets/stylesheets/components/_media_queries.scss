@@ -71,9 +71,19 @@
 // NAVBAR
 // Small screen
 @media only screen and (max-width: 700px) {
+  .navbar {
+    height: 60px;
+  }
+
   #nav-icons-position {
     right: 20px;
     top: 20px;
+  }
+
+  #navbar-logo {
+    margin-left: 0px;
+    height: 27px;
+    width: 89px;
   }
 
   #btn-navbar-about {
@@ -87,11 +97,6 @@
     font-size: 14px;
   }
 
-  #navbar-logo {
-    margin-left: 0px;
-    height: 31px;
-    width: 89px;
-  }
 }
 
 // -----------------------------------------------------------------------------
