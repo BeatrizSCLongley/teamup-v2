@@ -3,7 +3,7 @@
     <div class="row" id="home-banner-container-mobile">
       <div class="col">
         <div id="home-banner-video-mobile">
-          <%= cl_video_tag("https://res.cloudinary.com/beatrizscl/video/upload/v1605624509/teamup/lined_head_silhouette_o0asnj.mp4", id: "banner-video-head", height: '100%', width: "100%", autoplay: :autoplay, preload: 'auto', muted: :muted, overflow: 'hidden' ) %>
+          <%= cl_video_tag("https://res.cloudinary.com/beatrizscl/video/upload/v1605624509/teamup/lined_head_silhouette_o0asnj.mp4", id: "banner-video-head", height: '100%', width: "100%", autoplay: :autoplay, preload: 'auto', muted: :muted ) %>
         </div>
         <%= cl_image_tag("https://res.cloudinary.com/beatrizscl/image/upload/v1606127656/teamup/MIND_teamup_logo_infinity_uqc05v.png", alt: "logo", id: "img-banner-logo-mobile") %>
         <div id="home-banner-text-mobile">
@@ -11,10 +11,16 @@
           <!-- <p class="justify-text">We believe that leaders and teams can always get better. Better Teams, Better Times.</p> -->
           <p class="justify-text">teamup∞™ offer a range of solutions based on applied neuroscience designed to accelerate individual and team performance.</p>
         </div>
-        <div id="home-banner-quote-mobile">
-          <h2 id="banner-quote-mobile"><em>"Talent wins games, but teamwork wins championships"</em> - (Michael Jordan)</h2>
-        </div>
+        <!-- <div id="home-banner-quote-mobile">
+          <h2 id="banner-quote-mobile"><em>Talent wins games, but teamwork wins championships</em> - Michael Jordan</h2>
+        </div> -->
         <%= link_to "our solutions", root_path(@root, :anchor => "home-solutions-gray"), id: "home-banner-btn-mobile" %>
+      </div>
+    </div>
+    <div class="row margin-top-50 text-middle">
+      <div class="col">
+        <h2 id="banner-quote"><em>Talent wins games, but teamwork wins championships</em></h2>
+        <p id="quote-author">(Michael Jordan)</p>
       </div>
     </div>
   </div>
@@ -23,21 +29,27 @@
 <div id="home-banner">
   <div class="container">
     <div class="row" id="home-banner-container">
-      <div class="col-5 col-xl-6">
+      <div class="col-5 col-xl-6" id="home-banner-text-container">
         <%= cl_image_tag("https://res.cloudinary.com/beatrizscl/image/upload/v1606127656/teamup/MIND_teamup_logo_infinity_uqc05v.png", alt: "logo", id: "img-banner-logo") %>
         <div id="home-banner-text">
           <h2 class="title-blue">Creating high performing teams</h2>
           <!-- <p class="justify-text">We believe that leaders and teams can always get better. Better Teams, Better Times.</p> -->
           <p class="justify-text">teamup∞™ offer a range of solutions based on applied neuroscience designed to accelerate individual and team performance.</p>
         </div>
-        <div id="home-banner-quote">
-          <h2 id="banner-quote"><em>"Talent wins games, but teamwork wins championships"</em> - Michael Jordan</h2>
-        </div>
-        <%= link_to "our solutions", root_path(@root, :anchor => "home-solutions-gray"), id: "home-banner-btn" %>
+     <!--    <div id="home-banner-quote">
+          <h2 id="banner-quote"><em>Talent wins games, but teamwork wins championships</em> - Michael Jordan</h2>
+        </div> -->
+        <%= link_to "our solutions", root_path(@root, :anchor => "home-solutions-gray"), id: "home-banner-btn", class: "text-middle" %>
       </div>
       <div class="col-7 col-xl-6">
         <%= cl_video_tag("https://res.cloudinary.com/beatrizscl/video/upload/v1605624509/teamup/lined_head_silhouette_o0asnj.mp4", id: "banner-video-head", height: '100%', width: "100%", autoplay: :autoplay, preload: 'auto', muted: :muted, style: "object-fit: none", overflow: 'hidden') %>
         <%#= video_tag "lined_head_silhouette.mp4", :type => "video/mp4", autoplay: :autoplay, preload: 'auto', muted: :muted, :height => '100%', :width => "100%", :id => "banner-video-head", :style => "object-fit: none"%>
+      </div>
+    </div>
+    <div class="row margin-top-50 text-middle">
+      <div class="col">
+        <h2 id="banner-quote"><em>Talent wins games, but teamwork wins championships</em></h2>
+        <p id="quote-author">(Michael Jordan)</p>
       </div>
     </div>
   </div>
@@ -62,7 +74,7 @@
     </div>
     <div class="divider"></div>
     <div class="text-middle">
-      <p id="quote"><em>“Without data, you’re just another person with an opinion”</em></p>
+      <p id="quote"><em>Without data, you’re just another person with an opinion</em></p>
       <p id="quote-author">(W. Edwards Deming)</p>
     </div>
   </div>
@@ -86,7 +98,7 @@
     </div>
     <div class="divider"></div>
     <div class="text-middle">
-      <p id="quote"><em>“Without data, you’re just another person with an opinion”</em></p>
+      <p id="quote"><em>Without data, you’re just another person with an opinion</em></p>
       <p id="quote-author">(W. Edwards Deming)</p>
     </div>
   </div>
