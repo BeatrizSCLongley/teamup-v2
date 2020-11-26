@@ -46,10 +46,11 @@
     </div>
   </div>
   <div class="row margin-top-50 margin-bottom-50">
-    <div class="col" id="about-founders-img">
+    <div class="col-12 col-lg-6 about-founders-img">
       <!-- ALI TISDALL -->
       <!-- Button trigger modal -->
       <%= cl_image_tag "https://res.cloudinary.com/beatrizscl/image/upload/v1605625681/teamup/ali_tisdall_nkbsus.jpg", alt: "Ali Tisdall", id: "img-founders-ali", data: { toggle: "modal", target: "#aliModalCenter" } %>
+      <p class="subtitles-grey text-middle">Ali Tisdall</p>
 
       <!-- Modal -->
       <div class="modal fade" id="aliModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -70,10 +71,13 @@
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="col-12 col-lg-6 about-founders-img">
       <!-- ANDY LONGLEY -->
       <!-- Button trigger modal -->
        <%= cl_image_tag "https://res.cloudinary.com/beatrizscl/image/upload/v1605625681/teamup/andy_longley_a47we0.jpg", alt: "Andy Longley", id: "img-founders-andy", data: { toggle: "modal", target: "#andyModalCenter" } %>
+       <p class="subtitles-grey text-middle">Andy Longley</p>
 
       <!-- Modal -->
       <div class="modal fade" id="andyModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
