@@ -9,9 +9,10 @@
   margin: 22px;
 }
 
-#about-founders-img {
+.about-founders-img {
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
 
 // -----------------------------------------------------------------------------
