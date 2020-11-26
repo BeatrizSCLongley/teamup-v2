@@ -2,7 +2,13 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="title-orange margin-top-50"><%= @solution.name %> contact form</h2>
+        <% if @solution.name == 'neuro-selfie™' %>
+          <h2 class="title-blue margin-top-50"><%= @solution.name %> contact form</h2>
+        <% elsif @solution.name == 'teamup∞ 180°' || @solution.name == 'teamup∞ 360°' || @solution.name == 'teamup∞ Team Effectiveness' %>
+          <h2 class="title-green margin-top-50"><%= @solution.name %> contact form</h2>
+        <% else %>
+          <h2 class="title-orange margin-top-50"><%= @solution.name %> contact form</h2>
+        <% end %>
         <div id="contact-banner-intro">
           <p>We would love to hear from you.</p>
           <p>Please provide your contact details below and feel free to leave any additional comments or questions you might have.</p>
@@ -40,7 +46,13 @@
             <% end %>
             <%= f.input :terms, as: :boolean, required: 'required', :label => content_for(:the_links) %>
             <%= recaptcha_tags %>
-            <%= f.submit "Send", class: "btn-orange margin-top-50", id: "btn-send" %>
+            <% if @solution.name == 'neuro-selfie™' %>
+              <%= f.submit "Send", class: "btn-blue-form margin-top-50", id: "btn-send" %>
+            <% elsif @solution.name == 'teamup∞ 180°' || @solution.name == 'teamup∞ 360°' || @solution.name == 'teamup∞ Team Effectiveness' %>
+              <%= f.submit "Send", class: "btn-green-form margin-top-50", id: "btn-send" %>
+            <% else %>
+              <%= f.submit "Send", class: "btn-orange margin-top-50", id: "btn-send" %>
+            <% end %>
           <% end %>
         </div>
       </div>
