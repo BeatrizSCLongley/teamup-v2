@@ -84,7 +84,7 @@ associate_ali.save!
 file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607518215/teamup/andy_longley_toewzs.jpg')
 associate_andy = Associate.new(
   name: 'Andy Longley',
-  bio: 'Founder: teamup.inc',
+  bio: 'Co-founder: teamup.inc',
   location: 'Berlin, Germany'
 )
 associate_andy.photo.attach(io: file, filename: 'andy_longley.jpg', content_type: 'image/jpg')
@@ -92,10 +92,21 @@ associate_andy.save!
 
 # -----------
 
+file = URI.open('')
+associate_emma = Associate.new(
+  name: 'Emma Ferrier',
+  bio: 'Operations Director',
+  location: 'London, England, United Kingdom'
+)
+associate_emma.photo.attach(io: file, filename: 'emma_ferrier.jpg', content_type: 'image/jpg')
+associate_emma.save!
+
+# -----------
+
 file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607518542/teamup/derek__thomson_ha3xgw.jpg')
 associate_derek = Associate.new(
   name: 'Derek Thomson',
-  bio: 'Leadership Consultant & Executive Coach',
+  bio: 'Coach & Team Facilitator',
   location: 'Scotland, United Kingdom'
 )
 associate_derek.photo.attach(io: file, filename: 'derek_thomson.jpg', content_type: 'image/jpg')
@@ -106,7 +117,7 @@ associate_derek.save!
 file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607518553/teamup/yan_martin_jcxasi.jpg')
 associate_yan_boston = Associate.new(
   name: 'Yan Martin',
-  bio: 'Strategic Advisor',
+  bio: 'Coach & Team Facilitator',
   location: 'Boston, United States of America'
 )
 associate_yan_boston.photo.attach(io: file, filename: 'yan_martin.jpg', content_type: 'image/jpg')
@@ -117,11 +128,55 @@ associate_yan_boston.save!
 file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607518553/teamup/yan_martin_jcxasi.jpg')
 associate_yan_montreal = Associate.new(
   name: 'Yan Martin',
-  bio: 'Strategic Advisor',
+  bio: 'Coach & Team Facilitator',
   location: 'Montreal, Canada'
 )
 associate_yan_montreal.photo.attach(io: file, filename: 'yan_martin.jpg', content_type: 'image/jpg')
 associate_yan_montreal.save!
+
+# -----------
+
+# file = URI.open('')
+# associate_nelly = Associate.new(
+#   name: 'Nelly Dormail',
+#   bio: 'Coach & Team Facilitator',
+#   location: 'Singapore, Republic of Singapore'
+# )
+# associate_nelly.photo.attach(io: file, filename: 'nelly_dormail.jpg', content_type: 'image/jpg')
+# associate_nelly.save!
+
+# -----------
+
+# file = URI.open('')
+# associate_matt = Associate.new(
+#   name: 'Matt Harrison',
+#   bio: 'Coach & Team Facilitator',
+#   location: 'Auckland, New Zealand'
+# )
+# associate_matt.photo.attach(io: file, filename: 'matt_harrison.jpg', content_type: 'image/jpg')
+# associate_matt.save!
+
+# -----------
+
+# file = URI.open('')
+# associate_liana = Associate.new(
+#   name: 'Liana Bagworth',
+#   bio: 'Coach & Team Facilitator',
+#   location: 'Dubai, United Arab Emirates'
+# )
+# associate_liana.photo.attach(io: file, filename: 'liana_bagworth.jpg', content_type: 'image/jpg')
+# associate_liana.save!
+
+# -----------
+
+# file = URI.open('')
+# associate_liana = Associate.new(
+#   name: 'Liana Bagworth',
+#   bio: 'Coach & Team Facilitator',
+#   location: 'Toronto, Canada'
+# )
+# associate_liana.photo.attach(io: file, filename: 'liana_bagworth.jpg', content_type: 'image/jpg')
+# associate_liana.save!
 
 # -----------
 
