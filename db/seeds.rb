@@ -6,7 +6,7 @@ Solution.delete_all
 
 puts 'Creating solutions:'
 
-file = URI.open('https://res.cloudinary.com/beatrizscl/image/upload/v1605625697/teamup/report_ns_w3yjvt.jpg')
+file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607518218/teamup/report_ns_kra3h3.jpg')
 solution_one = Solution.new(
   name: 'neuro-selfie™',
   tagline: 'Start with the individual',
@@ -19,7 +19,7 @@ solution_one.save!
 
 # -----------
 
-file = URI.open('https://res.cloudinary.com/beatrizscl/image/upload/v1605625696/teamup/report_180_nxy5ra.jpg')
+file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607518216/teamup/report_180_dnqv79.jpg')
 solution_two = Solution.new(
   name: 'teamup∞ 180°',
   tagline: 'Develop leaders',
@@ -32,7 +32,7 @@ solution_two.save!
 
 # -----------
 
-file = URI.open('https://res.cloudinary.com/beatrizscl/image/upload/v1605625696/teamup/report_360_nunqdz.jpg')
+file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607518216/teamup/report_360_mgvzy2.jpg')
 solution_three = Solution.new(
   name: 'teamup∞ 360°',
   tagline: 'Develop leaders',
@@ -45,7 +45,7 @@ solution_three.save!
 
 # -----------
 
-file = URI.open('https://res.cloudinary.com/beatrizscl/image/upload/v1605625696/teamup/report_teams_npztee.jpg')
+file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607518217/teamup/report_teams_fyfuqf.jpg')
 solution_four = Solution.new(
   name: 'teamup∞ Team Effectiveness',
   tagline: 'Develop teams',
@@ -65,5 +65,64 @@ solution_five.save!
 
 solution_general = Solution.new(name: 'General')
 solution_general.save!
+
+# ------------------------------------------------------------------------------
+
+puts 'Creating associates:'
+
+file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607518215/teamup/ali_tisdall_fowlj7.jpg')
+associate_ali = Associate.new(
+  name: 'Ali Tisdall',
+  bio: 'Founder & CEO: Mind³ & teamup.inc',
+  location: 'London, England, United Kingdom'
+)
+associate_ali.photo.attach(io: file, filename: 'ali_tisdall.jpg', content_type: 'image/jpg')
+associate_ali.save!
+
+# -----------
+
+file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607518215/teamup/andy_longley_toewzs.jpg')
+associate_andy = Associate.new(
+  name: 'Andy Longley',
+  bio: 'Founder: teamup.inc',
+  location: 'Berlin, Germany'
+)
+associate_andy.photo.attach(io: file, filename: 'andy_longley.jpg', content_type: 'image/jpg')
+associate_andy.save!
+
+# -----------
+
+file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607518542/teamup/derek__thomson_ha3xgw.jpg')
+associate_derek = Associate.new(
+  name: 'Derek Thomson',
+  bio: 'Leadership Consultant & Executive Coach',
+  location: 'Scotland, United Kingdom'
+)
+associate_derek.photo.attach(io: file, filename: 'derek_thomson.jpg', content_type: 'image/jpg')
+associate_derek.save!
+
+# -----------
+
+file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607518553/teamup/yan_martin_jcxasi.jpg')
+associate_yan_boston = Associate.new(
+  name: 'Yan Martin',
+  bio: 'Strategic Advisor',
+  location: 'Boston, United States of America'
+)
+associate_yan_boston.photo.attach(io: file, filename: 'yan_martin.jpg', content_type: 'image/jpg')
+associate_yan_boston.save!
+
+# -----------
+
+file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607518553/teamup/yan_martin_jcxasi.jpg')
+associate_yan_montreal = Associate.new(
+  name: 'Yan Martin',
+  bio: 'Strategic Advisor',
+  location: 'Montreal, Canada'
+)
+associate_yan_montreal.photo.attach(io: file, filename: 'yan_martin.jpg', content_type: 'image/jpg')
+associate_yan_montreal.save!
+
+# -----------
 
 puts 'Done'
