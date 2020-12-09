@@ -73,7 +73,7 @@ puts 'Creating associates:'
 file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607518215/teamup/ali_tisdall_fowlj7.jpg')
 associate_ali = Associate.new(
   name: 'Ali Tisdall',
-  bio: 'Founder & CEO: Mind³ & teamup.inc',
+  bio: 'Co-founder of teamup.inc & Operations Director',
   location: 'London, England, United Kingdom'
 )
 associate_ali.photo.attach(io: file, filename: 'ali_tisdall.jpg', content_type: 'image/jpg')
@@ -84,7 +84,7 @@ associate_ali.save!
 file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607518215/teamup/andy_longley_toewzs.jpg')
 associate_andy = Associate.new(
   name: 'Andy Longley',
-  bio: 'Co-founder: teamup.inc',
+  bio: 'Co-founder of teamup.inc & Operations Director',
   location: 'Berlin, Germany'
 )
 associate_andy.photo.attach(io: file, filename: 'andy_longley.jpg', content_type: 'image/jpg')
