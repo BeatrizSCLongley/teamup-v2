@@ -92,14 +92,14 @@ associate_andy.save!
 
 # -----------
 
-file = URI.open('')
-associate_emma = Associate.new(
-  name: 'Emma Ferrier',
-  bio: 'Operations Director',
-  location: 'London, England, United Kingdom'
-)
-associate_emma.photo.attach(io: file, filename: 'emma_ferrier.jpg', content_type: 'image/jpg')
-associate_emma.save!
+# file = URI.open('')
+# associate_emma = Associate.new(
+#   name: 'Emma Ferrier',
+#   bio: 'Operations Director',
+#   location: 'London, England, United Kingdom'
+# )
+# associate_emma.photo.attach(io: file, filename: 'emma_ferrier.jpg', content_type: 'image/jpg')
+# associate_emma.save!
 
 # -----------
 

@@ -1,4 +1,3 @@
-
 <div id="about-banner">
   <%= cl_video_tag("https://res.cloudinary.com/teamupinc/video/upload/v1607522467/teamup/background-white_wnahsr.mp4", id: "banner-show-video", height: '100%', width: "100%", autoplay: :autoplay, preload: 'auto', muted: :muted, loop: :loop, visibility: :visible, style: "object-fit: cover") %>
 </div>
@@ -15,7 +14,6 @@
 <div class="container margin-top-150">
   <div class="row">
     <div class="col-12 text-middle">
-      <!-- <p class="subtitles-grey"><strong>The team behind teamup∞™</strong></p> -->
       <h2 class="title-purple">The team behind teamup∞</h2>
       <p class="justify-text">teamup∞ are a boutique leadership and team development consultancy who believe to our core that by focusing on enhancing the team environment, organizations have the ability to dramatically impact performance, belonging, well-being and fun. <strong>Better Teams. Better Times.</strong></p>
 
@@ -39,10 +37,7 @@
 <div class="container margin-top-100">
   <div class="row" id="about-founders">
     <div class="col-12 text-middle">
-      <!-- <p class="subtitles-grey"><strong>The people behind teamup∞™</strong></p> -->
       <h2 class="title-pink">Meet our founders</h2>
-      <!-- <p>Andrew Longley is a business leader and organizational psychologist</p>
-      <p>Ali is a leadership & strategy specialist</p> -->
     </div>
   </div>
   <div class="row margin-top-50 margin-bottom-50">
@@ -63,7 +58,7 @@
               </button>
             </div>
             <div class="modal-body" id="modal-content">
-              <%= render 'pages/about_founders_ali' %>
+              <%= render 'associates/about_founders_ali' %>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn-pink" data-dismiss="modal">Close</button>
@@ -90,7 +85,7 @@
               </button>
             </div>
             <div class="modal-body" id="modal-content">
-              <%= render 'pages/about_founders_andy' %>
+              <%= render 'associates/about_founders_andy' %>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn-pink" data-dismiss="modal">Close</button>
@@ -103,5 +98,6 @@
   </div>
 </div>
 
-<%= render 'pages/about_time_line' %>
-<%= render 'pages/about_time_line_mobile' %>
+<%= render 'associates/about_time_line' %>
+<%= render 'associates/about_time_line_mobile' %>
+
