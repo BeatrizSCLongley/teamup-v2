@@ -27,11 +27,19 @@
       </div> -->
 
       <p class="justify-text">Our network have delivered coaching and development programs in over <strong>60 countries</strong> across <strong>6 continents</strong>.</p>
-      <!-- map to come here & add 'illustrated by the map below.' to the p -->
+
 
       <p class="justify-text">Within our affiliate network we have faculty on the ground (or virtually) in all continents, supported by world-class project management who make working with us as effortless as it should be. We strive to bring the personalization of a leadership and team development boutique, while understanding the importance and requirements of international scale.</p>
     </div>
   </div>
+</div>
+
+<!-- map to come here & add 'illustrated by the map below.' to the p -->
+<div class="mt-5">
+  <div id="map"
+     style="width: 100%; height: 400px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 </div>
 
 <div class="container margin-top-100">
