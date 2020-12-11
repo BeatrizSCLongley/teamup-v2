@@ -35,28 +35,45 @@
 </div>
 
 <!-- map to come here & add 'illustrated by the map below.' to the p -->
-<div class="mt-5">
+<div class="container mt-5">
   <div id="map"
-     style="width: 100%; height: 400px;"
+     style="width: 100%; height: 600px;"
      data-markers="<%= @markers.to_json %>"
      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 </div>
 
-<div class="container margin-top-100">
+<div class="container mt-5" id="associates-grid">
+  <div class="row">
+    <div class="col-4 col-md-4 col-lg-3 col-xl-3">
+      <%= render 'associates/modal_ali' %>
+    </div>
+    <div class="col-4 col-md-4 col-lg-3 col-xl-3">
+      <%= render 'associates/modal_andy' %>
+    </div>
+    <div class="col-4 col-md-4 col-lg-3 col-xl-3">
+      <%= render 'associates/modal_derek' %>
+    </div>
+    <div class="col-4 col-md-4 col-lg-3 col-xl-3">
+      <%= render 'associates/modal_yan' %>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container margin-top-100">
   <div class="row" id="about-founders">
     <div class="col-12 text-middle">
       <h2 class="title-pink">Meet our founders</h2>
     </div>
   </div>
   <div class="row margin-top-50 margin-bottom-50">
-    <div class="col-12 col-lg-6 about-founders-img">
+    <div class="col-12 col-lg-6 about-founders-img"> -->
       <!-- ALI TISDALL -->
       <!-- Button trigger modal -->
-      <%= cl_image_tag "https://res.cloudinary.com/teamupinc/image/upload/v1607522468/teamup/ali_tisdall_zrlzul.jpg", alt: "Ali Tisdall", id: "img-founders-ali", data: { toggle: "modal", target: "#aliModalCenter" } %>
-      <p class="subtitles-grey text-middle">Ali Tisdall</p>
+      <%#= cl_image_tag "https://res.cloudinary.com/teamupinc/image/upload/v1607522468/teamup/ali_tisdall_zrlzul.jpg", alt: "Ali Tisdall", id: "img-founders-ali", data: { toggle: "modal", target: "#aliModalCenter" } %>
+      <!-- <p class="subtitles-grey text-middle">Ali Tisdall</p> -->
 
       <!-- Modal -->
-      <div class="modal fade" id="aliModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <!-- <div class="modal fade" id="aliModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -66,7 +83,7 @@
               </button>
             </div>
             <div class="modal-body" id="modal-content">
-              <%= render 'associates/about_founders_ali' %>
+              <%#= render 'associates/about_founders_ali' %>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn-pink" data-dismiss="modal">Close</button>
@@ -74,16 +91,16 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="col-12 col-lg-6 about-founders-img">
+ <!--    <div class="col-12 col-lg-6 about-founders-img"> -->
       <!-- ANDY LONGLEY -->
       <!-- Button trigger modal -->
-       <%= cl_image_tag "https://res.cloudinary.com/teamupinc/image/upload/v1607522470/teamup/andy_longley_bsrohe.jpg", alt: "Andy Longley", id: "img-founders-andy", data: { toggle: "modal", target: "#andyModalCenter" } %>
-       <p class="subtitles-grey text-middle">Andy Longley</p>
+       <%#= cl_image_tag "https://res.cloudinary.com/teamupinc/image/upload/v1607522470/teamup/andy_longley_bsrohe.jpg", alt: "Andy Longley", id: "img-founders-andy", data: { toggle: "modal", target: "#andyModalCenter" } %>
+      <!--  <p class="subtitles-grey text-middle">Andy Longley</p> -->
 
       <!-- Modal -->
-      <div class="modal fade" id="andyModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <!-- <div class="modal fade" id="andyModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -93,7 +110,7 @@
               </button>
             </div>
             <div class="modal-body" id="modal-content">
-              <%= render 'associates/about_founders_andy' %>
+              <%#= render 'associates/about_founders_andy' %>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn-pink" data-dismiss="modal">Close</button>
@@ -104,7 +121,7 @@
 
     </div>
   </div>
-</div>
+</div> -->
 
 <%= render 'associates/about_time_line' %>
 <%= render 'associates/about_time_line_mobile' %>
