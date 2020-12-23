@@ -66,10 +66,9 @@
 #img-founders-andy {
   width: 236px;
   height: 277px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.12);
 
   &:hover {
-    width: 246px;
-    height: 276px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 }
@@ -77,10 +76,9 @@
 #img-founders-ali {
   width: 236px;
   height: 277px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.12);
 
   &:hover {
-    width: 246px;
-    height: 276px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 }

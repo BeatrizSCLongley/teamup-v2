@@ -1,4 +1,3 @@
-
 <div id="about-banner">
   <%= cl_video_tag("https://res.cloudinary.com/teamupinc/video/upload/v1607522467/teamup/background-white_wnahsr.mp4", id: "banner-show-video", height: '100%', width: "100%", autoplay: :autoplay, preload: 'auto', muted: :muted, loop: :loop, visibility: :visible, style: "object-fit: cover") %>
 </div>
@@ -15,7 +14,6 @@
 <div class="container margin-top-150">
   <div class="row">
     <div class="col-12 text-middle">
-      <!-- <p class="subtitles-grey"><strong>The team behind teamup∞™</strong></p> -->
       <h2 class="title-purple">The team behind teamup∞</h2>
       <p class="justify-text">teamup∞ are a boutique leadership and team development consultancy who believe to our core that by focusing on enhancing the team environment, organizations have the ability to dramatically impact performance, belonging, well-being and fun. <strong>Better Teams. Better Times.</strong></p>
 
@@ -29,31 +27,53 @@
       </div> -->
 
       <p class="justify-text">Our network have delivered coaching and development programs in over <strong>60 countries</strong> across <strong>6 continents</strong>.</p>
-      <!-- map to come here & add 'illustrated by the map below.' to the p -->
+
 
       <p class="justify-text">Within our affiliate network we have faculty on the ground (or virtually) in all continents, supported by world-class project management who make working with us as effortless as it should be. We strive to bring the personalization of a leadership and team development boutique, while understanding the importance and requirements of international scale.</p>
     </div>
   </div>
 </div>
 
-<div class="container margin-top-100">
+<!-- map to come here & add 'illustrated by the map below.' to the p -->
+<div class="container mt-5">
+  <div id="map"
+     style="width: 100%; height: 600px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+</div>
+
+<div class="container mt-5" id="associates-grid">
+  <div class="row">
+    <div class="col-4 col-md-4 col-lg-3 col-xl-3">
+      <%= render 'associates/modal_ali' %>
+    </div>
+    <div class="col-4 col-md-4 col-lg-3 col-xl-3">
+      <%= render 'associates/modal_andy' %>
+    </div>
+    <div class="col-4 col-md-4 col-lg-3 col-xl-3">
+      <%= render 'associates/modal_derek' %>
+    </div>
+    <div class="col-4 col-md-4 col-lg-3 col-xl-3">
+      <%= render 'associates/modal_yan' %>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container margin-top-100">
   <div class="row" id="about-founders">
     <div class="col-12 text-middle">
-      <!-- <p class="subtitles-grey"><strong>The people behind teamup∞™</strong></p> -->
       <h2 class="title-pink">Meet our founders</h2>
-      <!-- <p>Andrew Longley is a business leader and organizational psychologist</p>
-      <p>Ali is a leadership & strategy specialist</p> -->
     </div>
   </div>
   <div class="row margin-top-50 margin-bottom-50">
-    <div class="col-12 col-lg-6 about-founders-img">
+    <div class="col-12 col-lg-6 about-founders-img"> -->
       <!-- ALI TISDALL -->
       <!-- Button trigger modal -->
-      <%= cl_image_tag "https://res.cloudinary.com/teamupinc/image/upload/v1607522468/teamup/ali_tisdall_zrlzul.jpg", alt: "Ali Tisdall", id: "img-founders-ali", data: { toggle: "modal", target: "#aliModalCenter" } %>
-      <p class="subtitles-grey text-middle">Ali Tisdall</p>
+      <%#= cl_image_tag "https://res.cloudinary.com/teamupinc/image/upload/v1607522468/teamup/ali_tisdall_zrlzul.jpg", alt: "Ali Tisdall", id: "img-founders-ali", data: { toggle: "modal", target: "#aliModalCenter" } %>
+      <!-- <p class="subtitles-grey text-middle">Ali Tisdall</p> -->
 
       <!-- Modal -->
-      <div class="modal fade" id="aliModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <!-- <div class="modal fade" id="aliModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -63,7 +83,7 @@
               </button>
             </div>
             <div class="modal-body" id="modal-content">
-              <%= render 'pages/about_founders_ali' %>
+              <%#= render 'associates/about_founders_ali' %>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn-pink" data-dismiss="modal">Close</button>
@@ -71,16 +91,16 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="col-12 col-lg-6 about-founders-img">
+ <!--    <div class="col-12 col-lg-6 about-founders-img"> -->
       <!-- ANDY LONGLEY -->
       <!-- Button trigger modal -->
-       <%= cl_image_tag "https://res.cloudinary.com/teamupinc/image/upload/v1607522470/teamup/andy_longley_bsrohe.jpg", alt: "Andy Longley", id: "img-founders-andy", data: { toggle: "modal", target: "#andyModalCenter" } %>
-       <p class="subtitles-grey text-middle">Andy Longley</p>
+       <%#= cl_image_tag "https://res.cloudinary.com/teamupinc/image/upload/v1607522470/teamup/andy_longley_bsrohe.jpg", alt: "Andy Longley", id: "img-founders-andy", data: { toggle: "modal", target: "#andyModalCenter" } %>
+      <!--  <p class="subtitles-grey text-middle">Andy Longley</p> -->
 
       <!-- Modal -->
-      <div class="modal fade" id="andyModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <!-- <div class="modal fade" id="andyModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -90,7 +110,7 @@
               </button>
             </div>
             <div class="modal-body" id="modal-content">
-              <%= render 'pages/about_founders_andy' %>
+              <%#= render 'associates/about_founders_andy' %>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn-pink" data-dismiss="modal">Close</button>
@@ -101,7 +121,8 @@
 
     </div>
   </div>
-</div>
+</div> -->
 
-<%= render 'pages/about_time_line' %>
-<%= render 'pages/about_time_line_mobile' %>
+<%= render 'associates/about_time_line' %>
+<%= render 'associates/about_time_line_mobile' %>
+

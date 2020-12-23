@@ -23,7 +23,7 @@ file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607522469/t
 solution_two = Solution.new(
   name: 'teamup∞ 180°',
   tagline: 'Develop leaders',
-  description_one: 'Based on the teamup∞ model for high performing teams, the teamup∞ 180° assessment offers comprehensive, evidence-based feedback on your greatest strengths/development areas in order to drive high performance with your team. It gathers self, team and line manager feedback and offers developmental advice in each dimension.',
+  description_one: 'Based on the teamup∞ model for high performing teams, the teamup∞ 180° diagnostic assessment offers comprehensive, evidence-based feedback on your greatest strengths/development areas in order to drive high performance with your team. It gathers self, team and line manager feedback and offers developmental advice in each dimension.',
   description_two: 'The report includes the latest neuroscience behind each of the six roles, and also provides the barriers to effectiveness which you are demonstrating as an additional platform for your growth.',
   button: 'teamup∞ 180° sample report'
 )
@@ -51,7 +51,7 @@ solution_four = Solution.new(
   tagline: 'Develop teams',
   description_one: 'When teams function optimally, the entire organization benefits because our efforts and impact are amplified.',
   description_two: 'The teamup∞ Team Effectiveness assessment offers comprehensive, evidence-based feedback on your team’s greatest strengths & development areas for driving high performance. It gathers feedback from each team member (including yourself) and offers developmental advice in each dimension, as well as practical suggestions on how to take your team performance to the next level.',
-  button: 'teamup∞ for teams sample report'
+  button: 'teamup∞ Team Effectiveness sample report'
 )
 solution_four.photo.attach(io: file, filename: 'report_teams.jpg', content_type: 'image/jpg')
 solution_four.save!
@@ -73,7 +73,7 @@ puts 'Creating associates:'
 file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607522468/teamup/ali_tisdall_zrlzul.jpg')
 associate_ali = Associate.new(
   name: 'Ali Tisdall',
-  bio: 'Co-founder of teamup.inc & Operations Director',
+  bio: 'Co-founder of teamup.inc & Coach & Team Facilitator',
   location: 'London, England, United Kingdom'
 )
 associate_ali.photo.attach(io: file, filename: 'ali_tisdall.jpg', content_type: 'image/jpg')
@@ -84,7 +84,7 @@ associate_ali.save!
 file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607522470/teamup/andy_longley_bsrohe.jpg')
 associate_andy = Associate.new(
   name: 'Andy Longley',
-  bio: 'Co-founder of teamup.inc & Operations Director',
+  bio: 'Co-founder of teamup.inc & Coach & Team Facilitator',
   location: 'Berlin, Germany'
 )
 associate_andy.photo.attach(io: file, filename: 'andy_longley.jpg', content_type: 'image/jpg')
@@ -92,14 +92,14 @@ associate_andy.save!
 
 # -----------
 
-file = URI.open('')
-associate_emma = Associate.new(
-  name: 'Emma Ferrier',
-  bio: 'Operations Director',
-  location: 'London, England, United Kingdom'
-)
-associate_emma.photo.attach(io: file, filename: 'emma_ferrier.jpg', content_type: 'image/jpg')
-associate_emma.save!
+# file = URI.open('')
+# associate_emma = Associate.new(
+#   name: 'Emma Ferrier',
+#   bio: 'Operations Director',
+#   location: 'London, England, United Kingdom'
+# )
+# associate_emma.photo.attach(io: file, filename: 'emma_ferrier.jpg', content_type: 'image/jpg')
+# associate_emma.save!
 
 # -----------
 
