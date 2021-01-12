@@ -92,14 +92,14 @@ associate_andy.save!
 
 # -----------
 
-# file = URI.open('')
-# associate_emma = Associate.new(
-#   name: 'Emma Ferrier',
-#   bio: 'Operations Director',
-#   location: 'London, England, United Kingdom'
-# )
-# associate_emma.photo.attach(io: file, filename: 'emma_ferrier.jpg', content_type: 'image/jpg')
-# associate_emma.save!
+file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1610464319/teamup/emma_ferrier_ri3wkt.jpg')
+associate_emma = Associate.new(
+  name: 'Emma Ferrier',
+  bio: 'Operations Director',
+  location: 'London, England, United Kingdom'
+)
+associate_emma.photo.attach(io: file, filename: 'emma_ferrier.jpg', content_type: 'image/jpg')
+associate_emma.save!
 
 # -----------
 
