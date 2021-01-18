@@ -97,7 +97,7 @@ file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1610464319/t
 associate_emma = Associate.new(
   name: 'Emma Ferrier',
   bio: 'Operations Director',
-  location: 'London, England, United Kingdom'
+  location: 'Wales, England, United Kingdom'
 )
 associate_emma.photo.attach(io: file, filename: 'emma_ferrier.jpg', content_type: 'image/jpg')
 associate_emma.save!
