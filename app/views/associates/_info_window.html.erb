@@ -1,4 +1,4 @@
 <div>
-  <%= cl_image_tag associate.photo.key, height: "250px", width: "100%", style: "object-fit: cover", class: "map-images" %>
-  <%#= link_to associate.name, about_path(@about, :anchor => "associates-bio"), id: "link-bio", class: "mt-1" %>
+  <%= cl_image_tag associate.photo.key, height: "250px", width: "100%", style: "object-fit: cover; border-radius: 2px; margin-bottom: 13px;", class: "map-images" %>
+  <%= link_to associate.name, about_path(@about, :anchor => "associates-bio"), class: "link-bio" %>
 </div>
