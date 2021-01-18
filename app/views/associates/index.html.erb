@@ -1,16 +1,3 @@
-<div id="about-banner">
-  <%= cl_video_tag("https://res.cloudinary.com/teamupinc/video/upload/v1607522467/teamup/background-white_wnahsr.mp4", id: "banner-show-video", height: '100%', width: "100%", autoplay: :autoplay, preload: 'auto', muted: :muted, loop: :loop, visibility: :visible, style: "object-fit: cover") %>
-</div>
-
-<div class="container margin-top-150" id="about-banner-title">
-  <div class="row">
-    <div class="col text-middle">
-      <h2 class="title-pink"><em>Now I’ve worked with a high performing team, I’ll never accept average again</em></h2>
-      <p id="quote-author">(Managing Director of the Americas for a global retail brand)</p>
-    </div>
-  </div>
-</div>
-
 <div class="container margin-top-150">
   <div class="row">
     <div class="col-12 text-middle">
@@ -18,13 +5,6 @@
       <p class="justify-text">teamup∞ are a boutique leadership and team development consultancy who believe to our core that by focusing on enhancing the team environment, organizations have the ability to dramatically impact performance, belonging, well-being and fun. <strong>Better Teams. Better Times.</strong></p>
 
       <p class="justify-text">We are headquartered in London & Berlin, but with an eco-system of global associates to be able to draw from truly diverse skillsets and profiles to best meet an organization's needs.</p>
-
-      <!-- <p class="justify-text">Our sibling consultancies are:</p>
-      <div id="about-consultancies-img">
-        <%#= link_to cl_image_tag("https://res.cloudinary.com/beatrizscl/image/upload/v1605625696/teamup/mind3_logo_cyp1st.png", alt: "mind3 logo", id: "img-consultancies-mind"), 'https://www.mind-3.com', target: :_blank %>
-        <%#= link_to image_tag('psychIO_logo.png', alt: 'psychIO logo', id: 'img-consultancies-psychio'), 'https://www.psych-io.com', target: :_blank %>
-        <%#= cl_image_tag("https://res.cloudinary.com/beatrizscl/image/upload/v1605625696/teamup/psychIO_logo_acgrag.png", alt: "psych-io logo", id: "img-consultancies-psychio") %>
-      </div> -->
 
       <p class="justify-text">Our network have delivered coaching and development programs in over <strong>60 countries</strong> across <strong>6 continents</strong>.</p>
 
@@ -77,70 +57,14 @@
   </div>
 </div>
 
-<!-- <div class="container margin-top-100">
-  <div class="row" id="about-founders">
-    <div class="col-12 text-middle">
-      <h2 class="title-pink">Meet our founders</h2>
+<div class="container margin-top-150" id="about-quote">
+  <div class="row">
+    <div class="col text-middle">
+      <h2 class="title-pink"><em>Now I’ve worked with a high performing team, I’ll never accept average again</em></h2>
+      <p id="quote-author">(Managing Director of the Americas for a global retail brand)</p>
     </div>
   </div>
-  <div class="row margin-top-50 margin-bottom-50">
-    <div class="col-12 col-lg-6 about-founders-img"> -->
-      <!-- ALI TISDALL -->
-      <!-- Button trigger modal -->
-      <%#= cl_image_tag "https://res.cloudinary.com/teamupinc/image/upload/v1607522468/teamup/ali_tisdall_zrlzul.jpg", alt: "Ali Tisdall", id: "img-founders-ali", data: { toggle: "modal", target: "#aliModalCenter" } %>
-      <!-- <p class="subtitles-grey text-middle">Ali Tisdall</p> -->
-
-      <!-- Modal -->
-      <!-- <div class="modal fade" id="aliModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 class="modal-title title-pink-v2" id="exampleModalLongTitle">Ali Tisdall</h2>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body" id="modal-content">
-              <%#= render 'associates/about_founders_ali' %>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn-pink" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
- <!--    <div class="col-12 col-lg-6 about-founders-img"> -->
-      <!-- ANDY LONGLEY -->
-      <!-- Button trigger modal -->
-       <%#= cl_image_tag "https://res.cloudinary.com/teamupinc/image/upload/v1607522470/teamup/andy_longley_bsrohe.jpg", alt: "Andy Longley", id: "img-founders-andy", data: { toggle: "modal", target: "#andyModalCenter" } %>
-      <!--  <p class="subtitles-grey text-middle">Andy Longley</p> -->
-
-      <!-- Modal -->
-      <!-- <div class="modal fade" id="andyModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 class="modal-title title-pink-v2" id="exampleModalLongTitle">Andy Longley</h2>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body" id="modal-content">
-              <%#= render 'associates/about_founders_andy' %>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn-pink" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div> -->
+</div>
 
 <%= render 'associates/about_time_line' %>
 <%= render 'associates/about_time_line_mobile' %>
-
