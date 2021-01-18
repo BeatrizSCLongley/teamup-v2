@@ -14,8 +14,8 @@ const initMapbox = () => {
     const map = new mapboxgl.Map({
       container: 'map',
       // style: 'mapbox://styles/andrew-longley/ckik3o9lk0kup17p3upq8hy2f' // greytone
-      // style: 'mapbox://styles/andrew-longley/ckik3yykx0l7517qmkbdhout3' // bluetone
-      style: 'mapbox://styles/andrew-longley/ckiis0csl65hk1atbsgs3qk06' // darkviolettone
+      style: 'mapbox://styles/andrew-longley/ckik3yykx0l7517qmkbdhout3' // bluetone
+      // style: 'mapbox://styles/andrew-longley/ckiis0csl65hk1atbsgs3qk06' // darkviolettone
     });
 
     const markers = JSON.parse(mapElement.dataset.markers);
