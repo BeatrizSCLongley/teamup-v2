@@ -1,4 +1,5 @@
-require "open-uri"
+require 'open-uri'
+require 'resolv-replace' # resolved an issue with 'rails aborted! Net::OpenTimeout: execution expired'
 
 puts 'Cleaning Database...'
 
@@ -159,24 +160,24 @@ associate_matt.save!
 # -----------
 
 file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1610527252/teamup/liana_bagworth_bh0die.jpg')
-associate_liana = Associate.new(
+associate_liana_dubai = Associate.new(
   name: 'Liana Bagworth',
   bio: 'Coach & Team Facilitator',
   location: 'Dubai, United Arab Emirates'
 )
-associate_liana.photo.attach(io: file, filename: 'liana_bagworth.jpg', content_type: 'image/jpg')
-associate_liana.save!
+associate_liana_dubai.photo.attach(io: file, filename: 'liana_bagworth.jpg', content_type: 'image/jpg')
+associate_liana_dubai.save!
 
 # -----------
 
 file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1610527252/teamup/liana_bagworth_bh0die.jpg')
-associate_liana = Associate.new(
+associate_liana_toronto = Associate.new(
   name: 'Liana Bagworth',
   bio: 'Coach & Team Facilitator',
   location: 'Toronto, Canada'
 )
-associate_liana.photo.attach(io: file, filename: 'liana_bagworth.jpg', content_type: 'image/jpg')
-associate_liana.save!
+associate_liana_toronto.photo.attach(io: file, filename: 'liana_bagworth.jpg', content_type: 'image/jpg')
+associate_liana_toronto.save!
 
 # -----------
 
