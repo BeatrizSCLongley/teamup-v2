@@ -45,27 +45,17 @@
   height: 369px;
   width: 263px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.12);
-}
 
-.img-report:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
 }
 
 // -----------------------------------------------------------------------------
 // ABOUT
-#img-consultancies-mind {
-  width: 109px;
-  height: 67px;
-}
-
-#img-consultancies-psychio {
-  width: 85px;
-  height: 68px;
-}
-
-#img-founders-andy {
-  width: 236px;
-  height: 277px;
+.associates-img {
+  margin: 10px;
+  border-radius: 2px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.12);
 
   &:hover {
@@ -73,12 +63,32 @@
   }
 }
 
-#img-founders-ali {
-  width: 236px;
-  height: 277px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.12);
+// #img-consultancies-mind {
+//   width: 109px;
+//   height: 67px;
+// }
 
-  &:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-}
+// #img-consultancies-psychio {
+//   width: 85px;
+//   height: 68px;
+// }
+
+// #img-founders-andy {
+//   width: 236px;
+//   height: 277px;
+//   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.12);
+
+//   &:hover {
+//     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+//   }
+// }
+
+// #img-founders-ali {
+//   width: 236px;
+//   height: 277px;
+//   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.12);
+
+//   &:hover {
+//     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+//   }
+// }

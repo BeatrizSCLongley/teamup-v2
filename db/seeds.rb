@@ -1,4 +1,5 @@
-require "open-uri"
+require 'open-uri'
+require 'resolv-replace' # resolved an issue with 'rails aborted! Net::OpenTimeout: execution expired'
 
 puts 'Cleaning Database...'
 
@@ -92,14 +93,14 @@ associate_andy.save!
 
 # -----------
 
-# file = URI.open('')
-# associate_emma = Associate.new(
-#   name: 'Emma Ferrier',
-#   bio: 'Operations Director',
-#   location: 'London, England, United Kingdom'
-# )
-# associate_emma.photo.attach(io: file, filename: 'emma_ferrier.jpg', content_type: 'image/jpg')
-# associate_emma.save!
+file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1610464319/teamup/emma_ferrier_ri3wkt.jpg')
+associate_emma = Associate.new(
+  name: 'Emma Ferrier',
+  bio: 'Operations Director',
+  location: 'Wales, England, United Kingdom'
+)
+associate_emma.photo.attach(io: file, filename: 'emma_ferrier.jpg', content_type: 'image/jpg')
+associate_emma.save!
 
 # -----------
 
@@ -136,47 +137,47 @@ associate_yan_montreal.save!
 
 # -----------
 
-# file = URI.open('')
-# associate_nelly = Associate.new(
-#   name: 'Nelly Dormail',
-#   bio: 'Coach & Team Facilitator',
-#   location: 'Singapore, Republic of Singapore'
-# )
-# associate_nelly.photo.attach(io: file, filename: 'nelly_dormail.jpg', content_type: 'image/jpg')
-# associate_nelly.save!
+file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1611051998/teamup/nelly_darmali_ipsdth.jpg')
+associate_nelly = Associate.new(
+  name: 'Nelly Darmali',
+  bio: 'Coach & Team Facilitator',
+  location: 'Singapore, Republic of Singapore'
+)
+associate_nelly.photo.attach(io: file, filename: 'nelly_darmali.jpg', content_type: 'image/jpg')
+associate_nelly.save!
 
 # -----------
 
-# file = URI.open('')
-# associate_matt = Associate.new(
-#   name: 'Matt Harrison',
-#   bio: 'Coach & Team Facilitator',
-#   location: 'Auckland, New Zealand'
-# )
-# associate_matt.photo.attach(io: file, filename: 'matt_harrison.jpg', content_type: 'image/jpg')
-# associate_matt.save!
+file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1610527226/teamup/matt_harrison_vwxfax.jpg')
+associate_matt = Associate.new(
+  name: 'Matt Harrison',
+  bio: 'Coach & Team Facilitator',
+  location: 'Auckland, New Zealand'
+)
+associate_matt.photo.attach(io: file, filename: 'matt_harrison.jpg', content_type: 'image/jpg')
+associate_matt.save!
 
 # -----------
 
-# file = URI.open('')
-# associate_liana = Associate.new(
-#   name: 'Liana Bagworth',
-#   bio: 'Coach & Team Facilitator',
-#   location: 'Dubai, United Arab Emirates'
-# )
-# associate_liana.photo.attach(io: file, filename: 'liana_bagworth.jpg', content_type: 'image/jpg')
-# associate_liana.save!
+file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1610527252/teamup/liana_bagworth_bh0die.jpg')
+associate_liana_dubai = Associate.new(
+  name: 'Liana Bagworth',
+  bio: 'Coach & Team Facilitator',
+  location: 'Dubai, United Arab Emirates'
+)
+associate_liana_dubai.photo.attach(io: file, filename: 'liana_bagworth.jpg', content_type: 'image/jpg')
+associate_liana_dubai.save!
 
 # -----------
 
-# file = URI.open('')
-# associate_liana = Associate.new(
-#   name: 'Liana Bagworth',
-#   bio: 'Coach & Team Facilitator',
-#   location: 'Toronto, Canada'
-# )
-# associate_liana.photo.attach(io: file, filename: 'liana_bagworth.jpg', content_type: 'image/jpg')
-# associate_liana.save!
+file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1610527252/teamup/liana_bagworth_bh0die.jpg')
+associate_liana_toronto = Associate.new(
+  name: 'Liana Bagworth',
+  bio: 'Coach & Team Facilitator',
+  location: 'Toronto, Canada'
+)
+associate_liana_toronto.photo.attach(io: file, filename: 'liana_bagworth.jpg', content_type: 'image/jpg')
+associate_liana_toronto.save!
 
 # -----------
 

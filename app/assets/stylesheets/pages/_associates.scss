@@ -1,6 +1,6 @@
-#associates-grid {
+.associates-grid {
   display: flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 }
 
 // #about-founders {
@@ -19,6 +19,13 @@
 //   align-items: center;
 //   flex-direction: column;
 // }
+
+// -----------------------------------------------------------------------------
+#about-quote {
+  h2 {
+    font-size: 27px;
+  }
+}
 
 // -----------------------------------------------------------------------------
 #time-line-container-one {
