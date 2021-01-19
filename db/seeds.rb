@@ -137,14 +137,14 @@ associate_yan_montreal.save!
 
 # -----------
 
-# file = URI.open('')
-# associate_nelly = Associate.new(
-#   name: 'Nelly Dormail',
-#   bio: 'Coach & Team Facilitator',
-#   location: 'Singapore, Republic of Singapore'
-# )
-# associate_nelly.photo.attach(io: file, filename: 'nelly_dormail.jpg', content_type: 'image/jpg')
-# associate_nelly.save!
+file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1611051998/teamup/nelly_darmali_ipsdth.jpg')
+associate_nelly = Associate.new(
+  name: 'Nelly Darmali',
+  bio: 'Coach & Team Facilitator',
+  location: 'Singapore, Republic of Singapore'
+)
+associate_nelly.photo.attach(io: file, filename: 'nelly_darmali.jpg', content_type: 'image/jpg')
+associate_nelly.save!
 
 # -----------
 
