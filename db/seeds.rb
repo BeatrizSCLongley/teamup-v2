@@ -15,7 +15,7 @@ solution_one = Solution.new(
   description_two: 'It takes just a couple of minutes to complete and is a quick yet impactful self-report assessment which will lead to a greater understanding of which actions you can take to become an even stronger team leader.',
   button: 'neuro-selfie™ sample report'
 )
-solution_one.photo.attach(io: file, filename: 'report_ns.jpg', content_type: 'image/jpg')
+solution_one.image.attach(io: file, filename: 'report_ns.jpg', content_type: 'image/jpg')
 solution_one.save!
 
 # -----------
@@ -28,7 +28,7 @@ solution_two = Solution.new(
   description_two: 'The report includes the latest neuroscience behind each of the six roles, and also provides the barriers to effectiveness which you are demonstrating as an additional platform for your growth.',
   button: 'teamup∞ 180° sample report'
 )
-solution_two.photo.attach(io: file, filename: 'report_180.jpg', content_type: 'image/jpg')
+solution_two.image.attach(io: file, filename: 'report_180.jpg', content_type: 'image/jpg')
 solution_two.save!
 
 # -----------
@@ -41,7 +41,7 @@ solution_three = Solution.new(
   description_two: 'Depending on which group will bring the most powerful input, you can choose between peers, stakeholders, or even customers. With three different perspectives to compliment your own self-assessment, the development opportunity provided by the teamup∞ 360° is our most significant for the individual leader yet.',
   button: 'teamup∞ 360° sample report'
 )
-solution_three.photo.attach(io: file, filename: 'report_360.jpg', content_type: 'image/jpg')
+solution_three.image.attach(io: file, filename: 'report_360.jpg', content_type: 'image/jpg')
 solution_three.save!
 
 # -----------
@@ -54,7 +54,7 @@ solution_four = Solution.new(
   description_two: 'The teamup∞ Team Effectiveness assessment offers comprehensive, evidence-based feedback on your team’s greatest strengths & development areas for driving high performance. It gathers feedback from each team member (including yourself) and offers developmental advice in each dimension, as well as practical suggestions on how to take your team performance to the next level.',
   button: 'teamup∞ Team Effectiveness sample report'
 )
-solution_four.photo.attach(io: file, filename: 'report_teams.jpg', content_type: 'image/jpg')
+solution_four.image.attach(io: file, filename: 'report_teams.jpg', content_type: 'image/jpg')
 solution_four.save!
 
 # -----------
@@ -77,7 +77,7 @@ associate_ali = Associate.new(
   bio: 'Co-founder of teamup.inc & Coach & Team Facilitator',
   location: 'London, England, United Kingdom'
 )
-associate_ali.photo.attach(io: file, filename: 'ali_tisdall.jpg', content_type: 'image/jpg')
+associate_ali.image.attach(io: file, filename: 'ali_tisdall.jpg', content_type: 'image/jpg')
 associate_ali.save!
 
 # -----------
@@ -88,7 +88,7 @@ associate_andy = Associate.new(
   bio: 'Co-founder of teamup.inc & Coach & Team Facilitator',
   location: 'Berlin, Germany'
 )
-associate_andy.photo.attach(io: file, filename: 'andy_longley.jpg', content_type: 'image/jpg')
+associate_andy.image.attach(io: file, filename: 'andy_longley.jpg', content_type: 'image/jpg')
 associate_andy.save!
 
 # -----------
@@ -99,7 +99,7 @@ associate_emma = Associate.new(
   bio: 'Operations Director',
   location: 'Wales, England, United Kingdom'
 )
-associate_emma.photo.attach(io: file, filename: 'emma_ferrier.jpg', content_type: 'image/jpg')
+associate_emma.image.attach(io: file, filename: 'emma_ferrier.jpg', content_type: 'image/jpg')
 associate_emma.save!
 
 # -----------
@@ -110,7 +110,7 @@ associate_derek = Associate.new(
   bio: 'Coach & Team Facilitator',
   location: 'Scotland, United Kingdom'
 )
-associate_derek.photo.attach(io: file, filename: 'derek_thomson.jpg', content_type: 'image/jpg')
+associate_derek.image.attach(io: file, filename: 'derek_thomson.jpg', content_type: 'image/jpg')
 associate_derek.save!
 
 # -----------
@@ -121,7 +121,7 @@ associate_yan_boston = Associate.new(
   bio: 'Coach & Team Facilitator',
   location: 'Boston, United States of America'
 )
-associate_yan_boston.photo.attach(io: file, filename: 'yan_martin.jpg', content_type: 'image/jpg')
+associate_yan_boston.image.attach(io: file, filename: 'yan_martin.jpg', content_type: 'image/jpg')
 associate_yan_boston.save!
 
 # -----------
@@ -132,7 +132,7 @@ associate_yan_montreal = Associate.new(
   bio: 'Coach & Team Facilitator',
   location: 'Montreal, Canada'
 )
-associate_yan_montreal.photo.attach(io: file, filename: 'yan_martin.jpg', content_type: 'image/jpg')
+associate_yan_montreal.image.attach(io: file, filename: 'yan_martin.jpg', content_type: 'image/jpg')
 associate_yan_montreal.save!
 
 # -----------
@@ -143,7 +143,7 @@ associate_nelly = Associate.new(
   bio: 'Coach & Team Facilitator',
   location: 'Singapore, Republic of Singapore'
 )
-associate_nelly.photo.attach(io: file, filename: 'nelly_darmali.jpg', content_type: 'image/jpg')
+associate_nelly.image.attach(io: file, filename: 'nelly_darmali.jpg', content_type: 'image/jpg')
 associate_nelly.save!
 
 # -----------
@@ -154,7 +154,7 @@ associate_matt = Associate.new(
   bio: 'Coach & Team Facilitator',
   location: 'Auckland, New Zealand'
 )
-associate_matt.photo.attach(io: file, filename: 'matt_harrison.jpg', content_type: 'image/jpg')
+associate_matt.image.attach(io: file, filename: 'matt_harrison.jpg', content_type: 'image/jpg')
 associate_matt.save!
 
 # -----------
@@ -165,18 +165,18 @@ associate_liana_dubai = Associate.new(
   bio: 'Coach & Team Facilitator',
   location: 'Dubai, United Arab Emirates'
 )
-associate_liana_dubai.photo.attach(io: file, filename: 'liana_bagworth.jpg', content_type: 'image/jpg')
+associate_liana_dubai.image.attach(io: file, filename: 'liana_bagworth.jpg', content_type: 'image/jpg')
 associate_liana_dubai.save!
 
 # -----------
 
-file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1610527252/teamup/liana_bagworth_bh0die.jpg')
+file = open('https://res.cloudinary.com/teamupinc/image/upload/v1610527252/teamup/liana_bagworth_bh0die.jpg')
 associate_liana_toronto = Associate.new(
   name: 'Liana Bagworth',
   bio: 'Coach & Team Facilitator',
   location: 'Toronto, Canada'
 )
-associate_liana_toronto.photo.attach(io: file, filename: 'liana_bagworth.jpg', content_type: 'image/jpg')
+associate_liana_toronto.image.attach(io: file, filename: 'liana_bagworth.jpg', content_type: 'image/jpg')
 associate_liana_toronto.save!
 
 # -----------

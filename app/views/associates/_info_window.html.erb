@@ -1,5 +1,5 @@
 <div>
-  <%= cl_image_tag associate.photo.key, height: "250px", width: "100%", style: "object-fit: cover; border-radius: 2px; margin-bottom: 13px;", class: "map-images" %>
+  <%= cl_image_tag associate.image.key, height: "250px", width: "100%", style: "object-fit: cover; border-radius: 2px; margin-bottom: 13px;", class: "map-images" %>
   <div class="map-card-info">
     <%= link_to associate.name, about_path(@about, :anchor => "associates-bio"), class: "link-bio" %>
     <p><%= associate.bio %></p>
