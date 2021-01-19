@@ -1,24 +1,17 @@
-# README
+# Teamup∞™
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Creating high performing teams**
 
-Things you may want to cover:
+teamup∞™ offer a range of solutions designed to accelerate individual and team performance based on applied neuroscience.
 
-* Ruby version
+Access the website [here](http://www.teamup.inc/).
 
-* System dependencies
+## Additional Information
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This site was built on Ruby on Rails & uses the following:
+- bootstrap
+- cloudinary
+- geocoder & mapbox
+- reCAPTCHA
+- Postmark
+- Osano
