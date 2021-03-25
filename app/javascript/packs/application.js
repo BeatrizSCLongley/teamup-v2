@@ -8,6 +8,8 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
+require("components/aos_scrolling")
+
 // External
 import 'bootstrap';
 import 'mapbox-gl/dist/mapbox-gl.css';
