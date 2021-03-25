@@ -41,11 +41,18 @@
 
     <!-- Favicon -->
     <%= favicon_link_tag "loop_favicon_32x32.png" %>
+
+    <!-- AOS animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
     <%= render 'shared/navbar' %>
     <%= yield %>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <%= render 'shared/footer' %>
   </body>
 </html>
