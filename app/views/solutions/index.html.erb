@@ -136,7 +136,7 @@
           <p class="justify-text"><%= solution.description_two %></p>
           <div class="margin-top-50">
             <% if solution.name == 'neuro-selfie™' %>
-              <%= link_to solution.button, new_solution_contact_path(solution), class: 'btn-blue' %>
+              <%= link_to solution.button, new_solution_contact_path(solution), id: 'btn-blue-solution' %>
             <% elsif solution.name == 'General' || solution.name == 'Team effectiveness workshop series' %>
               <%= link_to solution.button, new_solution_contact_path(solution), class: 'hidden' %>
             <% else %>

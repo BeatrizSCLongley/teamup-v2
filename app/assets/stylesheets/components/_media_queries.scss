@@ -1,213 +1,201 @@
-// XS screen
-// @media only screen and (min-width: 320px) {
-//   // incease size of grey area
-//   #home-solutions-gray {
-//     height: 2317px;
-//   }
+// Extra-Small - iPhone5
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  // Navbar
+  .navbar {
+    height: 56px;
+  }
 
-//   .btn-green {
-//     padding: 10px 22px;
-//   }
+  #nav-icons-position {
+    right: 10px;
+    top: 16px;
+  }
 
-//   #home-workshop {
-//     height: 561px;
-//   }
-// }
+  #navbar-logo {
+    margin-left: 0px;
+    height: 20px;
+    width: 62px;
+  }
 
-// -----------------------------------------------------------------------------
-// Small screen
-@media only screen and (max-width: 767px) {
-  // Render different html banner depending on screen size
+  .btn-navbar-about {
+    padding: 1px 5px;
+    font-size: 12px;
+    margin-right: 7px;
+    border: 3px solid var(--teamupPink);
+  }
+
+  #btn-navbar-contact {
+    padding: 1px 5px;
+    font-size: 12px;
+    border: 3px solid var(--teamupPurple);
+  }
+
+  // HOME - banner
   #home-banner-mobile {
-    display: block;
+    height: 759px;
   }
 
-  #home-banner {
-    display: none;
+  #home-banner-text-mobile {
+    margin-bottom: 27px;
   }
 
-  #home-banner-btn {
-    padding: 10px 182px;
-  }
-
-  // incease size of grey area
+  // HOME - Solutions
   #home-solutions-gray {
-    height: 2215px;
-  }
-
-  .btn-green {
-    padding: 10px 20px;
+    height: 2498px;
   }
 
   .solutions-separation {
-    width: 377px; // size of the separation
-}
+    width: 295px;
+  }
 
-  // workshop
+  #btn-blue-solution {
+    padding: 10px 25px;
+  }
+
+  .btn-green {
+    padding: 10px 16px;
+  }
+
+  // HOME - Workshop
   #home-workshop {
-    height: 556px;
+    height: 640px;
   }
 
-  // IMAGES
-  // resize intro pic
-  #home-intro-pic {
-    height: 410px;
+  .btn-orange {
+    padding: 10px 85px;
   }
 
-  // dissapear the images of the solutions
-  .image-hide {
-    display: none;
+  // ABOUT
+  .associates-img {
+    height: 171px;
+    width: 126px;
   }
 
-  #home-sol-img-right {
-    display: none;
+  // ABOUT - timeline
+  #time-line-container-mobile-one {
+    height: 506px;
   }
 
-  #home-neuroselfie-img {
-    display: none;
+  #time-line-container-mobile-two {
+    height: 568px;
+  }
+
+  #time-line-container-mobile-three {
+    height: 466px;
+  }
+
+  #time-line-container-mobile-four {
+    height: 257px;
   }
 }
 
-// NAVBAR
-// Small screen
-@media only screen and (max-width: 700px) {
+// Small - iPhone 6/7/8
+@media only screen and (min-width: 375px) and (max-width: 414px) {
   .navbar {
     height: 60px;
   }
 
   #nav-icons-position {
-    right: 20px;
+    right: 13px;
     top: 20px;
   }
 
   #navbar-logo {
     margin-left: 0px;
-    height: 27px;
-    width: 89px;
+    height: 25px;
+    width: 87px;
   }
 
-  #btn-navbar-about {
-    padding: 3px 17px;
-    font-size: 14px;
-    margin-right: 15px;
+  .btn-navbar-about {
+    padding: 1px 8px;
+    font-size: 13px;
+    margin-right: 7px;
+    border: 3px solid var(--teamupPink);
   }
 
   #btn-navbar-contact {
-    padding: 3px 8px;
-    font-size: 14px;
+    padding: 1px 8px;
+    font-size: 13px;
+    border: 3px solid var(--teamupPurple);
   }
 
-}
-
-// -----------------------------------------------------------------------------
-// Medium screen
-@media only screen and (min-width: 768px) {
-  #home-banner-mobile {
-    display: none;
-  }
-
-  #home-banner {
-    display: block;
-  }
-
-  // #home-banner-btn {
-  //   padding: 10px 90px;
-  // }
-
-  // incease size of grey area
+  // HOME - solutions
   #home-solutions-gray {
-    height: 2207px;
+    height: 2323px;
+  }
+
+  .btn-green {
+    padding: 10px 16px;
+  }
+
+  // ABOUT - timeline
+  #time-line-container-mobile-one {
+    height: 447px;
+  }
+
+  #time-line-container-mobile-two {
+    height: 481px;
+  }
+
+  #time-line-container-mobile-three {
+    height: 397px;
   }
 }
 
-// Medium screen
-@media only screen and (max-width: 991px) {
-  // resize btn on teamup for teams
-  #btn-teams {
-    padding: 10px 14px;
+// Medium - iPhone 6/7/8 Plus
+@media only screen and (min-width: 414px) and (max-width: 700px) {
+  .navbar {
+    height: 60px;
   }
 
-  // #home-banner-btn {
-  //   padding: 10px 53px;
-  // }
-}
+  #nav-icons-position {
+    right: 13px;
+    top: 20px;
+  }
 
-// -----------------------------------------------------------------------------
-// Large screen
-@media only screen and (min-width: 992px) {
-  // incease size of grey area
+  #navbar-logo {
+    margin-left: 0px;
+    height: 25px;
+    width: 87px;
+  }
+
+  .btn-navbar-about {
+    padding: 1px 8px;
+    font-size: 13px;
+    margin-right: 7px;
+    border: 3px solid var(--teamupPink);
+  }
+
+  #btn-navbar-contact {
+    padding: 1px 8px;
+    font-size: 13px;
+    border: 3px solid var(--teamupPurple);
+  }
+
+  // HOME - solutions
   #home-solutions-gray {
-    height: 2158px;
+    height: 2230px;
   }
 
-  // resize intro pic
-  #home-intro-pic {
-    height: 445px;
+  .btn-green {
+    padding: 10px 16px;
+  }
+
+  .solutions-separation {
+    width: 369px;
+  }
+
+  // ABOUT
+  .associates-img {
+    height: 218px;
+    width: 170px;
   }
 }
 
 // -----------------------------------------------------------------------------
-// X-Large screen
-@media only screen and (min-width: 1441px) {
-  #home-banner {
-    height: 900px;
-  }
-}
-
-// @media only screen and (max-width: 1199px) {
-//   #home-banner-btn {
-//     padding: 10px 105px;
-//   }
+// Large
+// @media only screen and (min-width: 992px) {
 // }
 
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-// INDEX
-// Render different Intro section
-@media only screen and (max-width: 767px) {
-  #home-intro-mobile {
-    display: block;
-  }
-  #home-intro {
-    display: none;
-  }
-  .divider_two {
-    height: 55px;
-  }
-  #home-how-img {
-    margin-top: 0px;
-    height: 299px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #home-intro-mobile {
-    display: none;
-  }
-  #home-intro {
-    display: block;
-  }
-}
-
-// ------------------------------------------
-// ABOUT
-// Render different time-line sections
-@media only screen and (max-width: 767px) {
-  #about-time-line-mobile {
-    display: block;
-  }
-
-  #about-time-line {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #about-time-line-mobile {
-    display: none;
-  }
-
-  #about-time-line {
-    display: block;
-  }
-}
+// Extra-Large
+// @media only screen and (min-width: 1200px) {
+// }
