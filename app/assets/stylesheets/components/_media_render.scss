@@ -1,0 +1,127 @@
+// Small screen
+@media only screen and (max-width: 767px) {
+  // Render different html banner depending on screen size
+  #home-banner-mobile {
+    display: block;
+  }
+
+  #home-banner {
+    display: none;
+  }
+
+  #home-banner-btn {
+    padding: 10px 182px;
+  }
+
+  // IMAGES
+  // resize intro pic
+  #home-intro-pic {
+    height: 410px;
+  }
+
+  // dissapear the images of the solutions
+  .image-hide {
+    display: none;
+  }
+
+  #home-sol-img-right {
+    display: none;
+  }
+
+  #home-neuroselfie-img {
+    display: none;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Medium screen
+@media only screen and (min-width: 768px) {
+  #home-banner-mobile {
+    display: none;
+  }
+
+  #home-banner {
+    display: block;
+  }
+}
+
+// Medium screen
+@media only screen and (max-width: 991px) {
+  // resize btn on teamup for teams
+  #btn-teams {
+    padding: 10px 14px;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Large screen
+@media only screen and (min-width: 992px) {
+  // incease size of grey area
+  #home-solutions-gray {
+    height: 2158px;
+  }
+
+  // resize intro pic
+  #home-intro-pic {
+    height: 445px;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// X-Large screen
+@media only screen and (min-width: 1441px) {
+  #home-banner {
+    height: 900px;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// INDEX
+// Render different Intro section
+@media only screen and (max-width: 767px) {
+  #home-intro-mobile {
+    display: block;
+  }
+  #home-intro {
+    display: none;
+  }
+  .divider_two {
+    height: 55px;
+  }
+  #home-how-img {
+    margin-top: 0px;
+    height: 299px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #home-intro-mobile {
+    display: none;
+  }
+  #home-intro {
+    display: block;
+  }
+}
+
+// ------------------------------------------
+// ABOUT
+// Render different time-line sections
+@media only screen and (max-width: 767px) {
+  #about-time-line-mobile {
+    display: block;
+  }
+
+  #about-time-line {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #about-time-line-mobile {
+    display: none;
+  }
+
+  #about-time-line {
+    display: block;
+  }
+}

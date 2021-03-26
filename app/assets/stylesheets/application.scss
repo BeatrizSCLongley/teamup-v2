@@ -22,11 +22,13 @@
 @import "components/footer";
 @import "components/flash";
 @import "components/titles";
-@import "components/media_queries";
 @import "components/modal";
 @import "components/link";
 @import "components/quote";
 @import "components/info_window";
+
+@import "components/media_render";
+@import "components/media_queries";
 
 // Font type
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
@@ -36,7 +38,7 @@ body {
   font-family: 'Avenir Next', 'Nunito', sans-serif;
 }
 
-// General css
+// Font-size
 // MEDIA QUERY
 @media only screen and (max-width: 632px) {
   h2 {
