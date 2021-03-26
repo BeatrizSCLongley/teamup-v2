@@ -159,7 +159,7 @@ associate_matt.save!
 
 # -----------
 
-file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1610527252/teamup/liana_bagworth_bh0die.jpg')
+file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1616768586/teamup/liana_bagworth_ekvnwd.jpg')
 associate_liana_dubai = Associate.new(
   name: 'Liana Bagworth',
   bio: 'Coach & Team Facilitator',
@@ -170,7 +170,7 @@ associate_liana_dubai.save!
 
 # -----------
 
-file = open('https://res.cloudinary.com/teamupinc/image/upload/v1610527252/teamup/liana_bagworth_bh0die.jpg')
+file = open('https://res.cloudinary.com/teamupinc/image/upload/v1616768586/teamup/liana_bagworth_ekvnwd.jpg')
 associate_liana_toronto = Associate.new(
   name: 'Liana Bagworth',
   bio: 'Coach & Team Facilitator',
@@ -178,6 +178,17 @@ associate_liana_toronto = Associate.new(
 )
 associate_liana_toronto.image.attach(io: file, filename: 'liana_bagworth.jpg', content_type: 'image/jpg')
 associate_liana_toronto.save!
+
+# -----------
+
+file = open('https://res.cloudinary.com/teamupinc/image/upload/v1616768590/teamup/camille_garnier_rw2p7r.jpg')
+associate_camille = Associate.new(
+  name: 'Camille Garnier',
+  bio: 'Digital & Creative Lead',
+  location: 'Bordeaux, France'
+)
+associate_camille.image.attach(io: file, filename: 'camille_garnier.jpg', content_type: 'image/jpg')
+associate_camille.save!
 
 # -----------
 
