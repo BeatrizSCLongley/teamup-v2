@@ -9,6 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 
 require("components/aos_scrolling")
+require("analytics/google_analytics")
 
 // External
 import 'bootstrap';
