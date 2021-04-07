@@ -9,28 +9,22 @@ require("@rails/activestorage").start()
 require("channels")
 
 require("components/aos_scrolling")
-require("analytics/google_analytics")
 
 // External
 import 'bootstrap';
 import 'mapbox-gl/dist/mapbox-gl.css';
-
-// Uncomment to copy all static images under ../images to the output folder and reference
-// them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
-// or the `imagePath` JavaScript helper below.
-//
-// const images = require.context('../images', true)
-// const imagePath = (name) => images(name, true)
 
 // -----------------------------------------------------
 // Import functions here:
 // import { downloadBtn } from '../components/download';
 import { navbarScroll } from '../components/navbar';
 import { initMapbox } from '../plugins/init_mapbox';
+import { googleAnalytics } from '../analytics/google_analytics';
 
 document.addEventListener('turbolinks:load', () => {
   // initUpdateNavbarOnScroll();
   // downloadBtn();
   navbarScroll();
   initMapbox();
+  googleAnalytics();
 });
