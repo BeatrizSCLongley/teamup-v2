@@ -19,12 +19,10 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 // import { downloadBtn } from '../components/download';
 import { navbarScroll } from '../components/navbar';
 import { initMapbox } from '../plugins/init_mapbox';
-import { googleAnalytics } from '../analytics/google_analytics';
 
 document.addEventListener('turbolinks:load', () => {
   // initUpdateNavbarOnScroll();
   // downloadBtn();
   navbarScroll();
   initMapbox();
-  googleAnalytics();
 });
