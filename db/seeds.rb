@@ -4,6 +4,7 @@ require 'resolv-replace' # resolved an issue with 'rails aborted! Net::OpenTimeo
 puts 'Cleaning Database...'
 
 Solution.delete_all
+Associate.delete_all
 
 puts 'Creating solutions:'
 
@@ -75,7 +76,7 @@ file = URI.open('https://res.cloudinary.com/teamupinc/image/upload/v1607522468/t
 associate_ali = Associate.new(
   name: 'Ali Tisdall',
   bio: 'Co-founder of teamup.inc & Coach & Team Facilitator',
-  location: 'London, England, United Kingdom'
+  location: 'Marylebone, London, England, United Kingdom'
 )
 associate_ali.image.attach(io: file, filename: 'ali_tisdall.jpg', content_type: 'image/jpg')
 associate_ali.save!
@@ -189,6 +190,17 @@ associate_camille = Associate.new(
 )
 associate_camille.image.attach(io: file, filename: 'camille_garnier.jpg', content_type: 'image/jpg')
 associate_camille.save!
+
+# -----------
+
+file = open('https://res.cloudinary.com/teamupinc/image/upload/v1620549471/teamup/mark_adamoulas_acd40x.jpg')
+associate_mark = Associate.new(
+  name: 'Mark Adamoulas',
+  bio: 'Coach & Facilitator',
+  location: 'London, England, United Kingdom'
+)
+associate_mark.image.attach(io: file, filename: 'mark_adamoulas.jpg', content_type: 'image/jpg')
+associate_mark.save!
 
 # -----------
 
