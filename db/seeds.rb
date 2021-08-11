@@ -204,4 +204,15 @@ associate_mark.save!
 
 # -----------
 
+file = open('https://res.cloudinary.com/teamupinc/image/upload/v1628662065/teamup/alexandra_schneider_prqpad.jpg')
+associate_alexandra = Associate.new(
+  name: 'Alexandra Schneider',
+  bio: 'Coach & Facilitator',
+  location: 'Hamburg, Germany'
+)
+associate_alexandra.image.attach(io: file, filename: 'alexandra_schneider.jpg', content_type: 'image/jpg')
+associate_alexandra.save!
+
+# -----------
+
 puts 'Done'
